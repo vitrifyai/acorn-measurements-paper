@@ -1,0 +1,52 @@
+{
+  "title": "Motion-corrected dose binning and feature tracking in a synthetic polymer nanocomposite",
+  "simulation_scope": "Generic nanoparticle-loaded phase-separated polymer thin-film phantom. Dose-dependent changes are phenomenological, not calibrated to a named material.",
+  "seed": 20260923,
+  "shape": [
+    100,
+    512,
+    512
+  ],
+  "pixel_size_nm": 0.5,
+  "dose_per_frame_e_per_A2": 10.0,
+  "total_dose_e_per_A2": 1000.0,
+  "motion_correction": "ACORN two-pass rigid phase cross-correlation",
+  "particle_linking": "ACORN Hungarian assignment with 18 nm maximum displacement",
+  "analysis_bin_width_e_per_A2": 50,
+  "drift_trajectory_rmse_px": 0.6141039133071899,
+  "membrane_displacement_mae_nm": 1.524140939279763,
+  "particle_relative_displacement_mae_nm": 1.5360728955077092,
+  "n_acorn_track_rows": 114,
+  "bin_width_metrics": [
+    {
+      "bin_width_e_per_A2": 20,
+      "start_dose_e_per_A2": 490.0,
+      "end_dose_e_per_A2": 510.0,
+      "membrane_cnr": 0.9167518615722656,
+      "particle_localization_error_nm": 0.2558270663326471
+    },
+    {
+      "bin_width_e_per_A2": 100,
+      "start_dose_e_per_A2": 450.0,
+      "end_dose_e_per_A2": 550.0,
+      "membrane_cnr": 1.1421679258346558,
+      "particle_localization_error_nm": 0.2545907011043275
+    },
+    {
+      "bin_width_e_per_A2": 250,
+      "start_dose_e_per_A2": 380.0,
+      "end_dose_e_per_A2": 630.0,
+      "membrane_cnr": 1.230083703994751,
+      "particle_localization_error_nm": 0.2937187548675287
+    }
+  ],
+  "source_script": "build_figure2_polymer_motion.py",
+  "outputs": {
+    "png": "figure2_motion_dose_tracking.png",
+    "pdf": "figure2_motion_dose_tracking.pdf",
+    "tif": "figure2_motion_dose_tracking.tif",
+    "dpi": 600,
+    "width_inches": 7.0,
+    "height_inches": 8.6
+  }
+}

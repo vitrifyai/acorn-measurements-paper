@@ -1,0 +1,345 @@
+{
+ "n_movies": 48,
+ "frames": "24",
+ "pixel_size": "18.0 A/px",
+ "input_motion_px": "26.0",
+ "failure_definition": "alignment_success = alignment_rmse_px < 1.0 px",
+ "seeds": [
+  {
+   "movie": "nominal_300_rep0",
+   "random": "100",
+   "specimen": "4",
+   "trajectory": "0",
+   "noise": "100"
+  },
+  {
+   "movie": "nominal_300_rep1",
+   "random": "101",
+   "specimen": "5",
+   "trajectory": "1",
+   "noise": "101"
+  },
+  {
+   "movie": "nominal_300_rep2",
+   "random": "102",
+   "specimen": "6",
+   "trajectory": "2",
+   "noise": "102"
+  },
+  {
+   "movie": "nominal_300_rep3",
+   "random": "103",
+   "specimen": "7",
+   "trajectory": "3",
+   "noise": "103"
+  },
+  {
+   "movie": "nominal_300_rep4",
+   "random": "104",
+   "specimen": "8",
+   "trajectory": "4",
+   "noise": "104"
+  },
+  {
+   "movie": "nominal_300_rep5",
+   "random": "105",
+   "specimen": "9",
+   "trajectory": "5",
+   "noise": "105"
+  },
+  {
+   "movie": "dose_100_rep0",
+   "random": "100",
+   "specimen": "4",
+   "trajectory": "0",
+   "noise": "100"
+  },
+  {
+   "movie": "dose_100_rep1",
+   "random": "101",
+   "specimen": "5",
+   "trajectory": "1",
+   "noise": "101"
+  },
+  {
+   "movie": "dose_100_rep2",
+   "random": "102",
+   "specimen": "6",
+   "trajectory": "2",
+   "noise": "102"
+  },
+  {
+   "movie": "dose_100_rep3",
+   "random": "103",
+   "specimen": "7",
+   "trajectory": "3",
+   "noise": "103"
+  },
+  {
+   "movie": "dose_100_rep4",
+   "random": "104",
+   "specimen": "8",
+   "trajectory": "4",
+   "noise": "104"
+  },
+  {
+   "movie": "dose_100_rep5",
+   "random": "105",
+   "specimen": "9",
+   "trajectory": "5",
+   "noise": "105"
+  },
+  {
+   "movie": "dose_20_rep0",
+   "random": "100",
+   "specimen": "4",
+   "trajectory": "0",
+   "noise": "100"
+  },
+  {
+   "movie": "dose_20_rep1",
+   "random": "101",
+   "specimen": "5",
+   "trajectory": "1",
+   "noise": "101"
+  },
+  {
+   "movie": "dose_20_rep2",
+   "random": "102",
+   "specimen": "6",
+   "trajectory": "2",
+   "noise": "102"
+  },
+  {
+   "movie": "dose_20_rep3",
+   "random": "103",
+   "specimen": "7",
+   "trajectory": "3",
+   "noise": "103"
+  },
+  {
+   "movie": "dose_20_rep4",
+   "random": "104",
+   "specimen": "8",
+   "trajectory": "4",
+   "noise": "104"
+  },
+  {
+   "movie": "dose_20_rep5",
+   "random": "105",
+   "specimen": "9",
+   "trajectory": "5",
+   "noise": "105"
+  },
+  {
+   "movie": "dose_4_rep0",
+   "random": "100",
+   "specimen": "4",
+   "trajectory": "0",
+   "noise": "100"
+  },
+  {
+   "movie": "dose_4_rep1",
+   "random": "101",
+   "specimen": "5",
+   "trajectory": "1",
+   "noise": "101"
+  },
+  {
+   "movie": "dose_4_rep2",
+   "random": "102",
+   "specimen": "6",
+   "trajectory": "2",
+   "noise": "102"
+  },
+  {
+   "movie": "dose_4_rep3",
+   "random": "103",
+   "specimen": "7",
+   "trajectory": "3",
+   "noise": "103"
+  },
+  {
+   "movie": "dose_4_rep4",
+   "random": "104",
+   "specimen": "8",
+   "trajectory": "4",
+   "noise": "104"
+  },
+  {
+   "movie": "dose_4_rep5",
+   "random": "105",
+   "specimen": "9",
+   "trajectory": "5",
+   "noise": "105"
+  },
+  {
+   "movie": "dose_1_rep0",
+   "random": "100",
+   "specimen": "4",
+   "trajectory": "0",
+   "noise": "100"
+  },
+  {
+   "movie": "dose_1_rep1",
+   "random": "101",
+   "specimen": "5",
+   "trajectory": "1",
+   "noise": "101"
+  },
+  {
+   "movie": "dose_1_rep2",
+   "random": "102",
+   "specimen": "6",
+   "trajectory": "2",
+   "noise": "102"
+  },
+  {
+   "movie": "dose_1_rep3",
+   "random": "103",
+   "specimen": "7",
+   "trajectory": "3",
+   "noise": "103"
+  },
+  {
+   "movie": "dose_1_rep4",
+   "random": "104",
+   "specimen": "8",
+   "trajectory": "4",
+   "noise": "104"
+  },
+  {
+   "movie": "dose_1_rep5",
+   "random": "105",
+   "specimen": "9",
+   "trajectory": "5",
+   "noise": "105"
+  },
+  {
+   "movie": "dose_0.25_rep0",
+   "random": "100",
+   "specimen": "4",
+   "trajectory": "0",
+   "noise": "100"
+  },
+  {
+   "movie": "dose_0.25_rep1",
+   "random": "101",
+   "specimen": "5",
+   "trajectory": "1",
+   "noise": "101"
+  },
+  {
+   "movie": "dose_0.25_rep2",
+   "random": "102",
+   "specimen": "6",
+   "trajectory": "2",
+   "noise": "102"
+  },
+  {
+   "movie": "dose_0.25_rep3",
+   "random": "103",
+   "specimen": "7",
+   "trajectory": "3",
+   "noise": "103"
+  },
+  {
+   "movie": "dose_0.25_rep4",
+   "random": "104",
+   "specimen": "8",
+   "trajectory": "4",
+   "noise": "104"
+  },
+  {
+   "movie": "dose_0.25_rep5",
+   "random": "105",
+   "specimen": "9",
+   "trajectory": "5",
+   "noise": "105"
+  },
+  {
+   "movie": "dose_0.06_rep0",
+   "random": "100",
+   "specimen": "4",
+   "trajectory": "0",
+   "noise": "100"
+  },
+  {
+   "movie": "dose_0.06_rep1",
+   "random": "101",
+   "specimen": "5",
+   "trajectory": "1",
+   "noise": "101"
+  },
+  {
+   "movie": "dose_0.06_rep2",
+   "random": "102",
+   "specimen": "6",
+   "trajectory": "2",
+   "noise": "102"
+  },
+  {
+   "movie": "dose_0.06_rep3",
+   "random": "103",
+   "specimen": "7",
+   "trajectory": "3",
+   "noise": "103"
+  },
+  {
+   "movie": "dose_0.06_rep4",
+   "random": "104",
+   "specimen": "8",
+   "trajectory": "4",
+   "noise": "104"
+  },
+  {
+   "movie": "dose_0.06_rep5",
+   "random": "105",
+   "specimen": "9",
+   "trajectory": "5",
+   "noise": "105"
+  },
+  {
+   "movie": "dose_0.015_rep0",
+   "random": "100",
+   "specimen": "4",
+   "trajectory": "0",
+   "noise": "100"
+  },
+  {
+   "movie": "dose_0.015_rep1",
+   "random": "101",
+   "specimen": "5",
+   "trajectory": "1",
+   "noise": "101"
+  },
+  {
+   "movie": "dose_0.015_rep2",
+   "random": "102",
+   "specimen": "6",
+   "trajectory": "2",
+   "noise": "102"
+  },
+  {
+   "movie": "dose_0.015_rep3",
+   "random": "103",
+   "specimen": "7",
+   "trajectory": "3",
+   "noise": "103"
+  },
+  {
+   "movie": "dose_0.015_rep4",
+   "random": "104",
+   "specimen": "8",
+   "trajectory": "4",
+   "noise": "104"
+  },
+  {
+   "movie": "dose_0.015_rep5",
+   "random": "105",
+   "specimen": "9",
+   "trajectory": "5",
+   "noise": "105"
+  }
+ ]
+}

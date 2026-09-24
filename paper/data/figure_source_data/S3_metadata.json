@@ -1,0 +1,15 @@
+{
+  "transmission": {
+    "epochs_run": 100,
+    "csv": "work/model_runs/nanoparticles_tem/results.csv",
+    "final_box_map50": 0.9686,
+    "final_mask_map50": 0.93504
+  },
+  "scanning": {
+    "epochs_run": 95,
+    "csv": "work/model_runs/spores_sem/results.csv",
+    "final_box_map50": 0.85877,
+    "final_mask_map50": 0.85487
+  },
+  "reported_epoch_rule": "ultralytics best.pt, the epoch with the highest validation fitness, not the final epoch; the dotted line marks where training stopped"
+}

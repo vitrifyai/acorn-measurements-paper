@@ -1,0 +1,4 @@
+Repository: https://github.com/vitrifyai/acorn_software
+Commit: a5608b10f11ebb6e58490a8513bcf4c1ec9d5fd3
+Branch at assembly: main
+Assembly date: 2026-09-24

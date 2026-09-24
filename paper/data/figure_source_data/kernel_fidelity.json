@@ -1,0 +1,102 @@
+{
+ "rows": [
+  {
+   "material": "carbon",
+   "kind": "SE",
+   "q": 0.5,
+   "kernel": 0.0027308474621600782,
+   "trajectory": 0.0,
+   "rel_pct": 273084746216.0078
+  },
+  {
+   "material": "carbon",
+   "kind": "SE",
+   "q": 0.9,
+   "kernel": 155.61140078604453,
+   "trajectory": 155.70067064896134,
+   "rel_pct": 0.05733428285487193
+  },
+  {
+   "material": "carbon",
+   "kind": "SE",
+   "q": 0.95,
+   "kernel": 205.5876129141942,
+   "trajectory": 205.42528043238062,
+   "rel_pct": 0.07902264096800264
+  },
+  {
+   "material": "silicon",
+   "kind": "SE",
+   "q": 0.5,
+   "kernel": 0.36420029281296507,
+   "trajectory": 0.36524002428003144,
+   "rel_pct": 0.2846707364878517
+  },
+  {
+   "material": "silicon",
+   "kind": "SE",
+   "q": 0.9,
+   "kernel": 175.80089680113522,
+   "trajectory": 175.84102935680218,
+   "rel_pct": 0.022823203329596035
+  },
+  {
+   "material": "silicon",
+   "kind": "SE",
+   "q": 0.95,
+   "kernel": 211.69850607866252,
+   "trajectory": 211.9693667542523,
+   "rel_pct": 0.12778293379712596
+  },
+  {
+   "material": "copper",
+   "kind": "SE",
+   "q": 0.5,
+   "kernel": 4.454926839603015,
+   "trajectory": 4.482312924266197,
+   "rel_pct": 0.6109810967217455
+  },
+  {
+   "material": "copper",
+   "kind": "SE",
+   "q": 0.9,
+   "kernel": 46.5197733623812,
+   "trajectory": 46.5711378846965,
+   "rel_pct": 0.11029260749966546
+  },
+  {
+   "material": "copper",
+   "kind": "SE",
+   "q": 0.95,
+   "kernel": 56.54506616973796,
+   "trajectory": 56.60826424678143,
+   "rel_pct": 0.11164107906217409
+  },
+  {
+   "material": "gold",
+   "kind": "SE",
+   "q": 0.5,
+   "kernel": 5.141543966706271,
+   "trajectory": 5.141991918380244,
+   "rel_pct": 0.008711637067565272
+  },
+  {
+   "material": "gold",
+   "kind": "SE",
+   "q": 0.9,
+   "kernel": 20.180223796706475,
+   "trajectory": 20.190853331756106,
+   "rel_pct": 0.052645298715101596
+  },
+  {
+   "material": "gold",
+   "kind": "SE",
+   "q": 0.95,
+   "kernel": 25.087150725290815,
+   "trajectory": 25.103982247568066,
+   "rel_pct": 0.06704722028267504
+  }
+ ],
+ "worst_rel_pct": 273084746216.0078,
+ "suite_tolerance_pct": 10.0
+}

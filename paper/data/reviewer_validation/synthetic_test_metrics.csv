@@ -1,0 +1,125 @@
+box_map50,box_map50_95,box_precision,box_recall,checkpoint,checkpoint_sha256,condition,count_error,count_error_pct,dataset,f1,fixed_confidence,mask_map50,mask_map50_95,modality,n_images,n_matched_iou50,n_objects,n_pred,n_target_objects,n_truth,precision,recall,reported_mask_map50,reported_mask_map50_95,reproduced_within_1e-6,row_type,scope,stem
+0.9723008174051935,0.8055611473713356,0.9663664031838064,0.9384652585955331,external/doi/models/nanoparticles_tem/best.pt,0ad19cdfe34cc4515bc864c30481fa4a3277abe9c61a543fe3ea092ffe834597,,,,nanoparticles_tem,0.9206720735554389,,0.9320305154247486,0.593484330449659,TEM,60,,2814,,2348,,0.9363675615386142,0.9054940898345154,0.9352528859609762,0.5770714379169221,False,aggregate,all_classes_macro,
+0.9840815903582398,0.8888184111322348,0.9829023658819164,0.97090214839674,external/doi/models/nanoparticles_tem/best.pt,0ad19cdfe34cc4515bc864c30481fa4a3277abe9c61a543fe3ea092ffe834597,,,,nanoparticles_tem,0.9379248611357882,,0.9352528859609762,0.5770714379169221,TEM,60,,2814,,2348,,0.9443818637685342,0.9315555555555556,,,,aggregate,target_class,
+0.8821791013398508,0.7846585400450918,0.9133838323335824,0.8429989302028547,external/doi/models/spores_sem/best.pt,eb367758550ad4df1819bb3df26ca105201e1b69616c8b06fb8d5b9c35ab4c3b,,,,spores_sem,0.8733456115847894,,0.8776762124233541,0.6463394631813946,SEM,60,,3353,,1083,,0.905458091464168,0.8434328836932017,0.9898143894969132,0.8721374827881411,False,aggregate,all_classes_macro,
+0.9737755746541915,0.9365702065838579,0.9599077892862652,0.9732225300092336,external/doi/models/spores_sem/best.pt,eb367758550ad4df1819bb3df26ca105201e1b69616c8b06fb8d5b9c35ab4c3b,,,,spores_sem,0.9800190266365156,,0.9898143894969132,0.8721374827881411,SEM,60,,3353,,1083,,0.9721695352364136,0.9879963065558633,,,,aggregate,target_class,
+,,,,,,dose=20 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,38,,38,,38,,,,,,per_image_count,target_class,nano_test_00000
+,,,,,,dose=60 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,34,,35,,35,,,,,,per_image_count,target_class,nano_test_00001
+,,,,,,dose=20 e-/A2,-1,-2.6315789473684212,nanoparticles_tem,,0.5,,,TEM,,36,,37,,38,,,,,,per_image_count,target_class,nano_test_00002
+,,,,,,dose=40 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,49,,50,,50,,,,,,per_image_count,target_class,nano_test_00003
+,,,,,,dose=40 e-/A2,-1,-2.0,nanoparticles_tem,,0.5,,,TEM,,49,,49,,50,,,,,,per_image_count,target_class,nano_test_00004
+,,,,,,dose=20 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,38,,39,,39,,,,,,per_image_count,target_class,nano_test_00005
+,,,,,,dose=20 e-/A2,-2,-4.166666666666667,nanoparticles_tem,,0.5,,,TEM,,45,,46,,48,,,,,,per_image_count,target_class,nano_test_00006
+,,,,,,dose=20 e-/A2,-2,-6.25,nanoparticles_tem,,0.5,,,TEM,,28,,30,,32,,,,,,per_image_count,target_class,nano_test_00007
+,,,,,,dose=20 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,24,,24,,24,,,,,,per_image_count,target_class,nano_test_00008
+,,,,,,dose=40 e-/A2,-1,-3.0303030303030303,nanoparticles_tem,,0.5,,,TEM,,30,,32,,33,,,,,,per_image_count,target_class,nano_test_00009
+,,,,,,dose=40 e-/A2,-1,-2.0833333333333335,nanoparticles_tem,,0.5,,,TEM,,45,,47,,48,,,,,,per_image_count,target_class,nano_test_00010
+,,,,,,dose=40 e-/A2,-1,-2.9411764705882355,nanoparticles_tem,,0.5,,,TEM,,33,,33,,34,,,,,,per_image_count,target_class,nano_test_00011
+,,,,,,dose=60 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,10,,13,,13,,,,,,per_image_count,target_class,nano_test_00012
+,,,,,,dose=60 e-/A2,-1,-1.7857142857142858,nanoparticles_tem,,0.5,,,TEM,,55,,55,,56,,,,,,per_image_count,target_class,nano_test_00013
+,,,,,,dose=60 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,51,,51,,51,,,,,,per_image_count,target_class,nano_test_00014
+,,,,,,dose=20 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,31,,32,,32,,,,,,per_image_count,target_class,nano_test_00015
+,,,,,,dose=60 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,34,,34,,34,,,,,,per_image_count,target_class,nano_test_00016
+,,,,,,dose=20 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,32,,33,,33,,,,,,per_image_count,target_class,nano_test_00017
+,,,,,,dose=20 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,45,,53,,53,,,,,,per_image_count,target_class,nano_test_00018
+,,,,,,dose=40 e-/A2,-2,-4.3478260869565215,nanoparticles_tem,,0.5,,,TEM,,44,,44,,46,,,,,,per_image_count,target_class,nano_test_00019
+,,,,,,dose=40 e-/A2,-7,-13.20754716981132,nanoparticles_tem,,0.5,,,TEM,,45,,46,,53,,,,,,per_image_count,target_class,nano_test_00020
+,,,,,,dose=60 e-/A2,-4,-12.121212121212121,nanoparticles_tem,,0.5,,,TEM,,29,,29,,33,,,,,,per_image_count,target_class,nano_test_00021
+,,,,,,dose=60 e-/A2,2,12.5,nanoparticles_tem,,0.5,,,TEM,,11,,18,,16,,,,,,per_image_count,target_class,nano_test_00022
+,,,,,,dose=40 e-/A2,1,3.225806451612903,nanoparticles_tem,,0.5,,,TEM,,27,,32,,31,,,,,,per_image_count,target_class,nano_test_00023
+,,,,,,dose=40 e-/A2,2,6.666666666666667,nanoparticles_tem,,0.5,,,TEM,,30,,32,,30,,,,,,per_image_count,target_class,nano_test_00024
+,,,,,,dose=20 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,33,,34,,34,,,,,,per_image_count,target_class,nano_test_00025
+,,,,,,dose=40 e-/A2,3,11.538461538461538,nanoparticles_tem,,0.5,,,TEM,,25,,29,,26,,,,,,per_image_count,target_class,nano_test_00026
+,,,,,,dose=60 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,44,,44,,44,,,,,,per_image_count,target_class,nano_test_00027
+,,,,,,dose=40 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,35,,37,,37,,,,,,per_image_count,target_class,nano_test_00028
+,,,,,,dose=20 e-/A2,-2,-10.526315789473685,nanoparticles_tem,,0.5,,,TEM,,16,,17,,19,,,,,,per_image_count,target_class,nano_test_00029
+,,,,,,dose=60 e-/A2,1,2.127659574468085,nanoparticles_tem,,0.5,,,TEM,,46,,48,,47,,,,,,per_image_count,target_class,nano_test_00030
+,,,,,,dose=20 e-/A2,-4,-8.695652173913043,nanoparticles_tem,,0.5,,,TEM,,40,,42,,46,,,,,,per_image_count,target_class,nano_test_00031
+,,,,,,dose=20 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,17,,18,,18,,,,,,per_image_count,target_class,nano_test_00032
+,,,,,,dose=20 e-/A2,-1,-2.5641025641025643,nanoparticles_tem,,0.5,,,TEM,,38,,38,,39,,,,,,per_image_count,target_class,nano_test_00033
+,,,,,,dose=40 e-/A2,-1,-2.380952380952381,nanoparticles_tem,,0.5,,,TEM,,41,,41,,42,,,,,,per_image_count,target_class,nano_test_00034
+,,,,,,dose=40 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,43,,44,,44,,,,,,per_image_count,target_class,nano_test_00035
+,,,,,,dose=40 e-/A2,-2,-3.389830508474576,nanoparticles_tem,,0.5,,,TEM,,57,,57,,59,,,,,,per_image_count,target_class,nano_test_00036
+,,,,,,dose=40 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,36,,36,,36,,,,,,per_image_count,target_class,nano_test_00037
+,,,,,,dose=40 e-/A2,-1,-3.0303030303030303,nanoparticles_tem,,0.5,,,TEM,,31,,32,,33,,,,,,per_image_count,target_class,nano_test_00038
+,,,,,,dose=40 e-/A2,-4,-6.779661016949152,nanoparticles_tem,,0.5,,,TEM,,53,,55,,59,,,,,,per_image_count,target_class,nano_test_00039
+,,,,,,dose=60 e-/A2,-3,-17.647058823529413,nanoparticles_tem,,0.5,,,TEM,,14,,14,,17,,,,,,per_image_count,target_class,nano_test_00040
+,,,,,,dose=40 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,44,,47,,47,,,,,,per_image_count,target_class,nano_test_00041
+,,,,,,dose=60 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,54,,55,,55,,,,,,per_image_count,target_class,nano_test_00042
+,,,,,,dose=40 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,36,,37,,37,,,,,,per_image_count,target_class,nano_test_00043
+,,,,,,dose=40 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,7,,16,,16,,,,,,per_image_count,target_class,nano_test_00044
+,,,,,,dose=60 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,33,,38,,38,,,,,,per_image_count,target_class,nano_test_00045
+,,,,,,dose=20 e-/A2,-2,-3.5714285714285716,nanoparticles_tem,,0.5,,,TEM,,53,,54,,56,,,,,,per_image_count,target_class,nano_test_00046
+,,,,,,dose=60 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,26,,28,,28,,,,,,per_image_count,target_class,nano_test_00047
+,,,,,,dose=20 e-/A2,-2,-8.695652173913043,nanoparticles_tem,,0.5,,,TEM,,20,,21,,23,,,,,,per_image_count,target_class,nano_test_00048
+,,,,,,dose=20 e-/A2,1,2.1739130434782608,nanoparticles_tem,,0.5,,,TEM,,46,,47,,46,,,,,,per_image_count,target_class,nano_test_00049
+,,,,,,dose=60 e-/A2,-1,-2.0408163265306123,nanoparticles_tem,,0.5,,,TEM,,43,,48,,49,,,,,,per_image_count,target_class,nano_test_00050
+,,,,,,dose=40 e-/A2,-1,-2.5,nanoparticles_tem,,0.5,,,TEM,,39,,39,,40,,,,,,per_image_count,target_class,nano_test_00051
+,,,,,,dose=40 e-/A2,-2,-5.555555555555555,nanoparticles_tem,,0.5,,,TEM,,31,,34,,36,,,,,,per_image_count,target_class,nano_test_00052
+,,,,,,dose=20 e-/A2,-6,-35.294117647058826,nanoparticles_tem,,0.5,,,TEM,,6,,11,,17,,,,,,per_image_count,target_class,nano_test_00053
+,,,,,,dose=40 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,15,,15,,15,,,,,,per_image_count,target_class,nano_test_00054
+,,,,,,dose=40 e-/A2,1,2.3255813953488373,nanoparticles_tem,,0.5,,,TEM,,35,,44,,43,,,,,,per_image_count,target_class,nano_test_00055
+,,,,,,dose=40 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,55,,55,,55,,,,,,per_image_count,target_class,nano_test_00056
+,,,,,,dose=20 e-/A2,1,1.8181818181818181,nanoparticles_tem,,0.5,,,TEM,,53,,56,,55,,,,,,per_image_count,target_class,nano_test_00057
+,,,,,,dose=40 e-/A2,-1,-5.0,nanoparticles_tem,,0.5,,,TEM,,17,,19,,20,,,,,,per_image_count,target_class,nano_test_00058
+,,,,,,dose=20 e-/A2,0,0.0,nanoparticles_tem,,0.5,,,TEM,,22,,24,,24,,,,,,per_image_count,target_class,nano_test_00059
+,,,,,,uncoated+charging,-1,-4.166666666666667,spores_sem,,0.5,,,SEM,,23,,23,,24,,,,,,per_image_count,target_class,spore_test_00000
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,6,,6,,6,,,,,,per_image_count,target_class,spore_test_00001
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,10,,10,,10,,,,,,per_image_count,target_class,spore_test_00002
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,4,,4,,4,,,,,,per_image_count,target_class,spore_test_00003
+,,,,,,coated,2,2.2222222222222223,spores_sem,,0.5,,,SEM,,87,,92,,90,,,,,,per_image_count,target_class,spore_test_00004
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,1,,1,,1,,,,,,per_image_count,target_class,spore_test_00005
+,,,,,,uncoated,1,2.2222222222222223,spores_sem,,0.5,,,SEM,,45,,46,,45,,,,,,per_image_count,target_class,spore_test_00006
+,,,,,,uncoated,0,0.0,spores_sem,,0.5,,,SEM,,3,,3,,3,,,,,,per_image_count,target_class,spore_test_00007
+,,,,,,coated,2,15.384615384615385,spores_sem,,0.5,,,SEM,,13,,15,,13,,,,,,per_image_count,target_class,spore_test_00008
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,55,,55,,55,,,,,,per_image_count,target_class,spore_test_00009
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,16,,16,,16,,,,,,per_image_count,target_class,spore_test_00010
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,8,,8,,8,,,,,,per_image_count,target_class,spore_test_00011
+,,,,,,coated,1,11.11111111111111,spores_sem,,0.5,,,SEM,,9,,10,,9,,,,,,per_image_count,target_class,spore_test_00012
+,,,,,,coated,1,50.0,spores_sem,,0.5,,,SEM,,2,,3,,2,,,,,,per_image_count,target_class,spore_test_00013
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,3,,3,,3,,,,,,per_image_count,target_class,spore_test_00014
+,,,,,,coated,1,1.3513513513513513,spores_sem,,0.5,,,SEM,,74,,75,,74,,,,,,per_image_count,target_class,spore_test_00015
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,9,,9,,9,,,,,,per_image_count,target_class,spore_test_00016
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,2,,2,,2,,,,,,per_image_count,target_class,spore_test_00017
+,,,,,,uncoated,0,0.0,spores_sem,,0.5,,,SEM,,15,,15,,15,,,,,,per_image_count,target_class,spore_test_00018
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,11,,11,,11,,,,,,per_image_count,target_class,spore_test_00019
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,7,,7,,7,,,,,,per_image_count,target_class,spore_test_00020
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,2,,2,,2,,,,,,per_image_count,target_class,spore_test_00021
+,,,,,,uncoated+charging,-1,-9.090909090909092,spores_sem,,0.5,,,SEM,,10,,10,,11,,,,,,per_image_count,target_class,spore_test_00022
+,,,,,,uncoated+charging,1,7.142857142857143,spores_sem,,0.5,,,SEM,,14,,15,,14,,,,,,per_image_count,target_class,spore_test_00023
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,30,,30,,30,,,,,,per_image_count,target_class,spore_test_00024
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,6,,6,,6,,,,,,per_image_count,target_class,spore_test_00025
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,19,,22,,22,,,,,,per_image_count,target_class,spore_test_00026
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,2,,2,,2,,,,,,per_image_count,target_class,spore_test_00027
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,10,,10,,10,,,,,,per_image_count,target_class,spore_test_00028
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,20,,20,,20,,,,,,per_image_count,target_class,spore_test_00029
+,,,,,,uncoated,0,0.0,spores_sem,,0.5,,,SEM,,1,,1,,1,,,,,,per_image_count,target_class,spore_test_00030
+,,,,,,uncoated,0,0.0,spores_sem,,0.5,,,SEM,,5,,5,,5,,,,,,per_image_count,target_class,spore_test_00031
+,,,,,,uncoated+charging,1,6.25,spores_sem,,0.5,,,SEM,,16,,17,,16,,,,,,per_image_count,target_class,spore_test_00032
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,3,,3,,3,,,,,,per_image_count,target_class,spore_test_00033
+,,,,,,uncoated,0,0.0,spores_sem,,0.5,,,SEM,,71,,75,,75,,,,,,per_image_count,target_class,spore_test_00034
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,3,,3,,3,,,,,,per_image_count,target_class,spore_test_00035
+,,,,,,uncoated+charging,1,1.8867924528301887,spores_sem,,0.5,,,SEM,,53,,54,,53,,,,,,per_image_count,target_class,spore_test_00036
+,,,,,,uncoated,1,25.0,spores_sem,,0.5,,,SEM,,4,,5,,4,,,,,,per_image_count,target_class,spore_test_00037
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,5,,5,,5,,,,,,per_image_count,target_class,spore_test_00038
+,,,,,,uncoated+charging,3,2.9702970297029703,spores_sem,,0.5,,,SEM,,101,,104,,101,,,,,,per_image_count,target_class,spore_test_00039
+,,,,,,uncoated,0,0.0,spores_sem,,0.5,,,SEM,,3,,3,,3,,,,,,per_image_count,target_class,spore_test_00040
+,,,,,,uncoated,0,0.0,spores_sem,,0.5,,,SEM,,4,,4,,4,,,,,,per_image_count,target_class,spore_test_00041
+,,,,,,uncoated,0,0.0,spores_sem,,0.5,,,SEM,,13,,13,,13,,,,,,per_image_count,target_class,spore_test_00042
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,1,,1,,1,,,,,,per_image_count,target_class,spore_test_00043
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,20,,20,,20,,,,,,per_image_count,target_class,spore_test_00044
+,,,,,,uncoated,0,0.0,spores_sem,,0.5,,,SEM,,2,,2,,2,,,,,,per_image_count,target_class,spore_test_00045
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,19,,19,,19,,,,,,per_image_count,target_class,spore_test_00046
+,,,,,,uncoated,0,0.0,spores_sem,,0.5,,,SEM,,1,,1,,1,,,,,,per_image_count,target_class,spore_test_00047
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,8,,8,,8,,,,,,per_image_count,target_class,spore_test_00048
+,,,,,,coated,1,100.0,spores_sem,,0.5,,,SEM,,1,,2,,1,,,,,,per_image_count,target_class,spore_test_00049
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,1,,1,,1,,,,,,per_image_count,target_class,spore_test_00050
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,4,,4,,4,,,,,,per_image_count,target_class,spore_test_00051
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,14,,14,,14,,,,,,per_image_count,target_class,spore_test_00052
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,1,,1,,1,,,,,,per_image_count,target_class,spore_test_00053
+,,,,,,uncoated+charging,0,0.0,spores_sem,,0.5,,,SEM,,10,,10,,10,,,,,,per_image_count,target_class,spore_test_00054
+,,,,,,uncoated,7,7.954545454545454,spores_sem,,0.5,,,SEM,,88,,95,,88,,,,,,per_image_count,target_class,spore_test_00055
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,8,,8,,8,,,,,,per_image_count,target_class,spore_test_00056
+,,,,,,uncoated,0,0.0,spores_sem,,0.5,,,SEM,,13,,14,,14,,,,,,per_image_count,target_class,spore_test_00057
+,,,,,,coated,0,0.0,spores_sem,,0.5,,,SEM,,26,,26,,26,,,,,,per_image_count,target_class,spore_test_00058
+,,,,,,uncoated+charging,2,3.6363636363636362,spores_sem,,0.5,,,SEM,,54,,57,,55,,,,,,per_image_count,target_class,spore_test_00059

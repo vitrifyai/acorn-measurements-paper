@@ -1,0 +1,5 @@
+preparation,fraction_pixels_below_DN32,heldout_F1_mean,heldout_F1_SD,confident_reference_F1,number_training_seeds,between_field_SD,dark_fraction_vs_score_Spearman_rho,dark_fraction_vs_score_p,confident_reference_share_vs_score_Spearman_rho,confident_reference_share_vs_score_p
+per-image 0.5-99.5 percentile,0.6805,0.6239,0.0158,0.7299,3,0.1389,-0.881,0.00385,0.643,0.0856
+raw microscope 8-bit,0.0187,0.6376,0.0067,0.7338,3,0.1149,0.147,0.728,0.738,0.0366
+one global intensity window,0.0180,0.6176,0.0314,0.7119,3,0.1282,0.098,0.817,0.643,0.0856
+isolate-stratified split,NOT APPLICABLE,0.6516,0.0249,0.7292,3,0.2402,NOT APPLICABLE,NOT APPLICABLE,NOT AVAILABLE,NOT AVAILABLE

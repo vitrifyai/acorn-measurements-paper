@@ -1,0 +1,7 @@
+Initialisation,Acquired micrographs,n runs,Replicate type,Mask mAP@50 mean,SD,Range,Median
+simulation,2,4,4 resampled micrograph sets,0.2912,0.1760,0.1343-0.4561,0.2872
+natural image,2,4,4 resampled micrograph sets,0.4612,0.0452,0.3981-0.5041,0.4714
+simulation,4,4,4 resampled micrograph sets,0.5103,0.0128,0.4945-0.5259,0.5105
+natural image,4,4,4 resampled micrograph sets,0.5300,0.0131,0.5112-0.5391,0.5349
+simulation,8,10,"10 executions, fixed 8-image pool",0.5294,0 (exact),0.5294-0.5294,0.5294
+natural image,8,10,"10 executions, fixed 8-image pool",0.4810,0.0364,0.4292-0.5411,0.4759

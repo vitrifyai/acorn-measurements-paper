@@ -1,0 +1,14 @@
+Parameter,Value
+Forward model,Monte Carlo electron transport
+Elastic scattering,screened Rutherford
+Stopping power,Joy-Luo modified Bethe
+Range,Kanaya-Okayama (1972)
+Materials,"17, including 6 compounds by weight-averaged Z and A"
+Free parameter,"epsilon, energy per escaping secondary; fitted per material"
+Fitted epsilon range,57-243 eV
+Emission,SE1/SE2 split with per-material interaction-volume kernels
+Kernel construction,enclosed-weight CDF from traced trajectories
+Kernel fidelity,better than 1% on trajectory quantiles (Fig. S1B)
+Detectors,"ETD, TLD, BSE"
+Optional artefacts,specimen charging (off by default)
+Validation,"backscatter yield within 15% of published, 20% for gold (Fig. 4B)"

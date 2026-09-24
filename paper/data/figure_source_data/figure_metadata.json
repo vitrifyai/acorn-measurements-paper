@@ -1,0 +1,667 @@
+{
+  "generated_utc": "2026-09-11T18:55:04+00:00",
+  "git_commit": "be8aa3e78275464bbbcfea29b75e97ad81ad28d6",
+  "dpi": 600,
+  "background": "white",
+  "palette": {
+    "encoding_rule": "Colour encodes imaging modality only. Within a modality, series are separated by line style and marker fill, never by hue.",
+    "modality": {
+      "transmission_cryoTEM": "#2F4858",
+      "scanning_SEM": "#C08A2E"
+    },
+    "outcome": {
+      "reference_ground_truth": "#1B9E77",
+      "true_positive": "#7570B3",
+      "false_positive": "#E7298A",
+      "missed": "#525252"
+    },
+    "structural": {
+      "ink": "#1b1f24",
+      "grey": "#5b6670",
+      "rule": "#c3c9d1",
+      "band": "#eef0f3"
+    },
+    "accessibility": "The two modality hues differ in lightness as well as hue (L* ~31 vs ~62), so panels survive greyscale conversion and the common colour vision deficiencies."
+  },
+  "panels": {
+    "fig2": {
+      "A": {
+        "source": "external/doi/raw/cryo_tem_mrc/FoilHole_14663539_Data_14664769_14664771_20240215_115338.mrc",
+        "sha256": "c54af2c12c486d97271222fa2e721c35811588f7d9b27651d1b26a0c505a21b9",
+        "pixel_size_nm": 1.7834732055664062,
+        "pixel_size_origin": "MRC voxel_size header, x8 calibrated analysis binning",
+        "selection_rule": "field whose reference particle count is nearest the dataset median",
+        "reference_objects": 60,
+        "dataset_median_count": 47.5,
+        "display_stretch": {
+          "rule": "0.5-99.5 percentile",
+          "lo": 175.140625,
+          "hi": 211.171875
+        }
+      },
+      "B": {
+        "prompt": "dark round blob",
+        "drawn_label": "PLGA nanoparticle",
+        "label_is_translated": true,
+        "backend": "sam3",
+        "confidence": 0.5,
+        "n_accepted": 53,
+        "n_rejected": 0,
+        "rejection_rule": "equivalent diameter outside 8-400 nm"
+      },
+      "C": {
+        "field": "FoilHole_14663539_Data_14664769_14664771_20240215_115338",
+        "object_ids_full": [
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:012",
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:013",
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:014",
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:015",
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:016",
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:017",
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:018"
+        ],
+        "row_labels": [
+          "Nanoparticle 12",
+          "Nanoparticle 13",
+          "Nanoparticle 14",
+          "Nanoparticle 15",
+          "Nanoparticle 16",
+          "Nanoparticle 17",
+          "Nanoparticle 18"
+        ],
+        "id_note": "rows are labelled by specimen name plus the STORED annotation index within this field; this is NOT the positional numbering used in Figure 1 panel A, which comes from an independent SAM 3 run on the same micrograph",
+        "rows": "7 consecutive rows by object id, containing the traced object",
+        "object_ids": [
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:012",
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:013",
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:014",
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:015",
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:016",
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:017",
+          "FoilHole_14663539_Data_14664769_14664771_20240215_115338:018"
+        ],
+        "columns": [
+          "Object",
+          "Area (nm\u00b2)",
+          "ECD (nm)",
+          "Feret (nm)",
+          "Circularity"
+        ],
+        "source_csv": "build/measurements/cryo_objects.csv"
+      },
+      "D": {
+        "groups": {
+          "PLGA": 19,
+          "PLGA_LA": 257,
+          "PLGA_LA_DOTA": 19
+        },
+        "normality": {
+          "PLGA": {
+            "shapiro_p": 0.1226717796591969,
+            "dagostino_p": null
+          },
+          "PLGA_LA": {
+            "shapiro_p": 7.231832213490372e-08,
+            "dagostino_p": 1.4255598257487945e-06
+          },
+          "PLGA_LA_DOTA": {
+            "shapiro_p": 5.55818075514549e-05,
+            "dagostino_p": null
+          }
+        },
+        "all_normal": false,
+        "test": "Kruskal-Wallis",
+        "omnibus_stat": 2.705217212171824,
+        "omnibus_p": 0.2585648862001856,
+        "alpha": 0.05,
+        "tails": "two",
+        "posthoc": "Bonferroni-corrected Mann-Whitney U",
+        "pairwise": [
+          {
+            "a": "PLGA",
+            "b": "PLGA_LA",
+            "p_raw": 0.09770476697586034,
+            "p_adj": 0.293114300927581,
+            "n_a": 19,
+            "n_b": 257,
+            "cliffs_delta": -0.22793364734794186
+          },
+          {
+            "a": "PLGA",
+            "b": "PLGA_LA_DOTA",
+            "p_raw": 0.3352805665565344,
+            "p_adj": 1.0,
+            "n_a": 19,
+            "n_b": 19,
+            "cliffs_delta": -0.18559556786703602
+          },
+          {
+            "a": "PLGA_LA",
+            "b": "PLGA_LA_DOTA",
+            "p_raw": 0.9169710310962621,
+            "p_adj": 1.0,
+            "n_a": 257,
+            "n_b": 19,
+            "cliffs_delta": 0.014540241654720454
+          }
+        ],
+        "y": "equivalent circular diameter (nm)",
+        "x": "PLGA formulation"
+      },
+      "traceability": {
+        "object_id": "FoilHole_14663539_Data_14664769_14664771_20240215_115338:015",
+        "group": "PLGA_LA",
+        "ecd_nm": 68.777,
+        "marker": "none drawn; all traceability markers were removed from the panels at the author's request. The object id, its group and its ECD are retained here so the thread can be described in the caption or reinstated.",
+        "rule": "object whose ECD is nearest the median within the shown field"
+      },
+      "model": {
+        "weights": "external/doi/models/nanoparticles_tem/best.pt",
+        "checkpoint_sha256": "0ad19cdfe34cc4515bc864c30481fa4a3277abe9c61a543fe3ea092ffe834597",
+        "conf": 0.5
+      }
+    },
+    "fig3": {
+      "A": {
+        "source": "work/real_sem/images/4AC2_008.png",
+        "sha256": "5ca997a43de67e9eddbd1ae6f6ee83a5a570f10077db0cb79b9e57cc9914175b",
+        "pixel_size_nm": 10.886,
+        "pixel_size_origin": "Zeiss CZ_SEM ap_image_pixel_size",
+        "selection_rule": "field whose annotated object count is nearest the dataset median",
+        "reference_objects": 35,
+        "dataset_median_count": 36.0,
+        "display_stretch": {
+          "rule": "0.5-99.5 percentile",
+          "lo": 0.0,
+          "hi": 255.0
+        }
+      },
+      "B": {
+        "prompt": "oval object",
+        "drawn_label": "bacterial spore",
+        "label_is_translated": true,
+        "backend": "sam3",
+        "confidence": 0.5,
+        "n_accepted": 22,
+        "n_rejected": 0,
+        "rejection_rule": "equivalent diameter outside 400-4000 nm"
+      },
+      "C": {
+        "field": "4AC2_008",
+        "object_ids_full": [
+          "4AC2_008:001",
+          "4AC2_008:002",
+          "4AC2_008:003",
+          "4AC2_008:004",
+          "4AC2_008:005",
+          "4AC2_008:006",
+          "4AC2_008:007"
+        ],
+        "row_labels": [
+          "Spore 1",
+          "Spore 2",
+          "Spore 3",
+          "Spore 4",
+          "Spore 5",
+          "Spore 6",
+          "Spore 7"
+        ],
+        "id_note": "rows are labelled by specimen name plus the STORED annotation index within this field; this is NOT the positional numbering used in Figure 1 panel A, which comes from an independent SAM 3 run on the same micrograph",
+        "rows": "7 consecutive rows by object id, containing the traced object",
+        "object_ids": [
+          "4AC2_008:001",
+          "4AC2_008:002",
+          "4AC2_008:003",
+          "4AC2_008:004",
+          "4AC2_008:005",
+          "4AC2_008:006",
+          "4AC2_008:007"
+        ],
+        "columns": [
+          "Object",
+          "Area (nm\u00b2)",
+          "ECD (nm)",
+          "Feret (nm)",
+          "Circularity"
+        ],
+        "source_csv": "build/measurements/sem_objects.csv"
+      },
+      "D": {
+        "groups": {
+          "3A28": 126,
+          "10A5": 113,
+          "4CC1": 94,
+          "27E1": 70,
+          "4AC2": 68
+        },
+        "normality": {
+          "3A28": {
+            "shapiro_p": 7.170714313244943e-10,
+            "dagostino_p": 1.0841854425097753e-10
+          },
+          "10A5": {
+            "shapiro_p": 3.028248219953531e-11,
+            "dagostino_p": 4.248799257586419e-08
+          },
+          "4CC1": {
+            "shapiro_p": 0.00015542204726409187,
+            "dagostino_p": 0.0006067351700026563
+          },
+          "27E1": {
+            "shapiro_p": 0.1835614792199569,
+            "dagostino_p": 0.2787098299282083
+          },
+          "4AC2": {
+            "shapiro_p": 0.0071901539621791865,
+            "dagostino_p": 0.0027459349706491984
+          }
+        },
+        "all_normal": false,
+        "test": "Kruskal-Wallis",
+        "omnibus_stat": 13.815615759265471,
+        "omnibus_p": 0.007907391934733042,
+        "alpha": 0.05,
+        "tails": "two",
+        "posthoc": "Bonferroni-corrected Mann-Whitney U",
+        "pairwise": [
+          {
+            "a": "3A28",
+            "b": "10A5",
+            "p_raw": 0.609592893102737,
+            "p_adj": 1.0,
+            "n_a": 126,
+            "n_b": 113,
+            "cliffs_delta": -0.03834808259587019
+          },
+          {
+            "a": "3A28",
+            "b": "4CC1",
+            "p_raw": 0.6599337620476953,
+            "p_adj": 1.0,
+            "n_a": 126,
+            "n_b": 94,
+            "cliffs_delta": 0.03478554542384327
+          },
+          {
+            "a": "3A28",
+            "b": "27E1",
+            "p_raw": 0.015448479788338593,
+            "p_adj": 0.15448479788338593,
+            "n_a": 126,
+            "n_b": 70,
+            "cliffs_delta": 0.2090702947845804
+          },
+          {
+            "a": "3A28",
+            "b": "4AC2",
+            "p_raw": 0.04601504452348883,
+            "p_adj": 0.46015044523488824,
+            "n_a": 126,
+            "n_b": 68,
+            "cliffs_delta": -0.17390289449112983
+          },
+          {
+            "a": "10A5",
+            "b": "4CC1",
+            "p_raw": 0.4153454781652248,
+            "p_adj": 1.0,
+            "n_a": 113,
+            "n_b": 94,
+            "cliffs_delta": 0.06590096027113534
+          },
+          {
+            "a": "10A5",
+            "b": "27E1",
+            "p_raw": 0.008938147074752021,
+            "p_adj": 0.0893814707475202,
+            "n_a": 113,
+            "n_b": 70,
+            "cliffs_delta": 0.23034134007585338
+          },
+          {
+            "a": "10A5",
+            "b": "4AC2",
+            "p_raw": 0.05864387106087879,
+            "p_adj": 0.5864387106087878,
+            "n_a": 113,
+            "n_b": 68,
+            "cliffs_delta": -0.16814159292035402
+          },
+          {
+            "a": "4CC1",
+            "b": "27E1",
+            "p_raw": 0.06923572925913712,
+            "p_adj": 0.6923572925913712,
+            "n_a": 94,
+            "n_b": 70,
+            "cliffs_delta": 0.1662613981762917
+          },
+          {
+            "a": "4CC1",
+            "b": "4AC2",
+            "p_raw": 0.033771978277558644,
+            "p_adj": 0.33771978277558645,
+            "n_a": 94,
+            "n_b": 68,
+            "cliffs_delta": -0.19586983729662077
+          },
+          {
+            "a": "27E1",
+            "b": "4AC2",
+            "p_raw": 0.002773784626108846,
+            "p_adj": 0.02773784626108846,
+            "n_a": 70,
+            "n_b": 68,
+            "cliffs_delta": -0.29537815126050415
+          }
+        ],
+        "y": "equivalent circular diameter (nm)",
+        "x": "isolate"
+      },
+      "traceability": {
+        "object_id": "4AC2_008:002",
+        "group": "4AC2",
+        "ecd_nm": 1111.1706,
+        "marker": "none drawn; all traceability markers were removed from the panels at the author's request. The object id, its group and its ECD are retained here so the thread can be described in the caption or reinstated.",
+        "rule": "object whose ECD is nearest the median within the shown field"
+      },
+      "model": {
+        "weights": "external/doi/models/curve_sim_4/best.pt",
+        "checkpoint_sha256": "ea5fe9ce2bd36c0954379688c47c67b2b322304b840649dad7daf4ca902c8b05",
+        "conf": 0.5
+      }
+    },
+    "fig4": {
+      "rationale": "Simulation-specific capability, not sim-to-real transfer. Transfer results are reported in the text; they are a limitation of transfer, not a property of the forward model.",
+      "A": {
+        "cryoTEM": {
+          "parameters": {
+            "microscope": "krios",
+            "detector": "K3",
+            "pixel_size_nm": 1.7834732055664062,
+            "image_size_px": 512,
+            "voltage_kv": 300,
+            "total_dose_e_per_a2": 40.0,
+            "defocus_um": -2.0,
+            "ice_thickness_nm": 60.0,
+            "n_particles": 45,
+            "diameter_nm_mean": 42.0,
+            "diameter_nm_sd": 15.0,
+            "debris": {
+              "n": 12,
+              "extent_nm": 110.0,
+              "grain_nm": 7.0
+            }
+          },
+          "seed": 2,
+          "n_realizations": 7,
+          "selection_rule": "median realization by mean intensity",
+          "display_stretch": {
+            "rule": "0.5-99.5 percentile",
+            "lo": 0.0,
+            "hi": 254.2850000000035
+          },
+          "n_objects": 45
+        },
+        "SEM": {
+          "parameters": {
+            "pixel_size_nm": 10.886,
+            "shape": [
+              692,
+              1024
+            ],
+            "n_spores": 75,
+            "clustering": 0.55,
+            "length_nm": 1267.0,
+            "width_nm": 769.0,
+            "coating_nm": 0.0,
+            "substrate": "carbon",
+            "substrate_texture_nm": 220.0,
+            "E0_kev": 1.0,
+            "electrons_per_px": 800,
+            "detector": "TLD",
+            "debris_clumps": 7,
+            "debris_grain_nm": 70.0
+          },
+          "seed": 3,
+          "n_realizations": 7,
+          "selection_rule": "median realization by mean intensity",
+          "display_stretch": {
+            "rule": "0.5-99.5 percentile",
+            "lo": 542.7084698486328,
+            "hi": 1452.258734130859
+          },
+          "n_objects": 33
+        },
+        "labelled_instances_in_full_datasets": {
+          "nanoparticles": 18354,
+          "spores": 7629
+        },
+        "note": "labels are specified by the scene before it is imaged, not annotated"
+      },
+      "B_cryoTEM": {
+        "quantity": "defocus recovered from the simulated power spectrum",
+        "method": "Thon-ring match against the analytic CTF, chi(k) = pi*lam*df*k^2 - 0.5*pi*Cs*lam^3*k^4, fitted over 0.03-0.20 1/Angstrom",
+        "microscope": "krios",
+        "detector": "K3",
+        "pixel_size_A": 2.0,
+        "image_size_px": 1024,
+        "dose_e_per_A2": 80.0,
+        "seed": 5,
+        "rows": [
+          {
+            "set_um": -0.8,
+            "fitted_um": -1.2488110137672086,
+            "correlation": 0.22773055963169136
+          },
+          {
+            "set_um": -1.2,
+            "fitted_um": -1.4984981226533165,
+            "correlation": 0.3639711895674525
+          },
+          {
+            "set_um": -1.6,
+            "fitted_um": -1.68397997496871,
+            "correlation": 0.42043633168751693
+          },
+          {
+            "set_um": -2.0,
+            "fitted_um": -2.1048811013767206,
+            "correlation": 0.42546925732493224
+          },
+          {
+            "set_um": -2.5,
+            "fitted_um": -2.6327909887359198,
+            "correlation": 0.4201200146723341
+          },
+          {
+            "set_um": -3.0,
+            "fitted_um": -2.953817271589487,
+            "correlation": 0.3973204015179359
+          },
+          {
+            "set_um": -3.5,
+            "fitted_um": -3.5102628285356694,
+            "correlation": 0.38218922427491747
+          },
+          {
+            "set_um": -4.0,
+            "fitted_um": -4.180851063829787,
+            "correlation": 0.3487472873530162
+          }
+        ],
+        "mean_abs_error_um": 0.16328222778473067,
+        "max_abs_error_um": 0.44881101376720856,
+        "r_squared": 0.9861119135109434,
+        "note": "validates the optics, wavelength and CTF convention together, against a value known by construction rather than an external table"
+      },
+      "B_SEM": {
+        "materials": [
+          "carbon",
+          "silicon",
+          "copper",
+          "silver",
+          "gold"
+        ],
+        "model_eta": [
+          0.0588,
+          0.17205,
+          0.3261,
+          0.4405,
+          0.54795
+        ],
+        "reference_eta": [
+          0.06,
+          0.16,
+          0.3,
+          0.42,
+          0.49
+        ],
+        "deviation_pct": [
+          -1.9999999999999998,
+          7.5312500000000036,
+          8.700000000000005,
+          4.880952380952385,
+          11.826530612244909
+        ],
+        "tolerance_pct": [
+          15.0,
+          15.0,
+          15.0,
+          15.0,
+          20.0
+        ],
+        "reference_source": "Joy's backscatter database, 20 keV, normal incidence",
+        "n_electrons": 20000,
+        "seed": 1,
+        "note": "gold carries a relaxed 20% band: screened Rutherford overestimates backscattering from high-Z elements"
+      },
+      "C": {
+        "spore_conditions": {
+          "uncoated\n+ charging": {
+            "exact_pct": 68.18181818181819,
+            "n": 22
+          },
+          "coated": {
+            "exact_pct": 75.0,
+            "n": 24
+          },
+          "uncoated": {
+            "exact_pct": 78.57142857142857,
+            "n": 14
+          }
+        },
+        "nano_dose_groups": {
+          "20": {
+            "exact_pct": 45.0,
+            "n": 20
+          },
+          "60": {
+            "exact_pct": 57.142857142857146,
+            "n": 14
+          },
+          "40": {
+            "exact_pct": 34.61538461538461,
+            "n": 26
+          }
+        },
+        "y": "percentage of simulated images whose object count is exactly right",
+        "note": "a decomposition acquired data cannot provide, because the acquisition conditions there are whatever they were"
+      },
+      "D": {
+        "values": {
+          "simulation": {
+            "2": 0.29121153051430626,
+            "4": 0.510339331362837,
+            "8": 0.5293930807496385,
+            "0": 0.188
+          },
+          "natural image": {
+            "2": 0.4612451204191508,
+            "4": 0.5300328921287724,
+            "8": 0.48102884512191624
+          }
+        },
+        "spread_sd": {
+          "simulation": {
+            "2": 0.17598571798137597,
+            "4": 0.01280935755544269,
+            "8": 0.0,
+            "0": 0.0
+          },
+          "natural image": {
+            "2": 0.045248648839150724,
+            "4": 0.013122462380595097,
+            "8": 0.03641047889910346
+          }
+        },
+        "replicates": {
+          "simulation": {
+            "2": 4,
+            "4": 4,
+            "8": 10,
+            "0": 1
+          },
+          "natural image": {
+            "2": 4,
+            "4": 4,
+            "8": 10
+          }
+        },
+        "error_bars": "mean +/- 1 SD",
+        "y": "mask mAP@50 on 18 held-out acquired SEM micrographs",
+        "x": "acquired micrographs used for training",
+        "subset_resampled": true,
+        "note": "Four replicates at n=2 and n=4, ten seeds at n=8, each redrawing WHICH micrographs are annotated as well as the training seed. At n=8 the pool of eight is exhausted, so the spread there reflects training stochasticity only. The simulation arm at n=8 returned a bit-identical score in all TEN seeds: its 561 weight tensors are identical to 0.0e+00 and every results.csv column except wall-clock time matches, so training there is deterministic and the error bar is structurally zero rather than luckily zero. The natural-image arm at n=8 is genuinely stochastic (early stopping at 47 vs 120 epochs across seeds)."
+      }
+    }
+  },
+  "tables": {
+    "table2": {
+      "reference_source": "Joy's backscatter database, 20 keV, normal incidence",
+      "tolerance": "15%, relaxed to 20% for gold (screened Rutherford overestimates backscattering from high-Z elements; Mott cross-sections are the documented upgrade path)",
+      "n_electrons": 20000,
+      "seed": 1,
+      "energy_keV": 20,
+      "regenerated_from_build": true,
+      "values": [
+        [
+          "carbon",
+          "0.059",
+          "0.06",
+          "-2.0%"
+        ],
+        [
+          "silicon",
+          "0.172",
+          "0.16",
+          "+7.5%"
+        ],
+        [
+          "copper",
+          "0.326",
+          "0.30",
+          "+8.7%"
+        ],
+        [
+          "silver",
+          "0.441",
+          "0.42",
+          "+4.9%"
+        ],
+        [
+          "gold",
+          "0.548",
+          "0.49",
+          "+11.8%"
+        ]
+      ],
+      "outside_tolerance": []
+    }
+  },
+  "panel_statistics": {
+    "fig2D": "Kruskal-Wallis, p = 0.259   (n = 295)\ntwo-tailed, \u03b1 = 0.05, Bonferroni-corrected Mann-Whitney U\nlargest effect PLGA vs PLGA_LA: Cliff's \u03b4 = -0.23 (small), p = 0.293\n0 of 3 pairwise comparisons significant after correction; max |\u03b4| = 0.23, distributions overlap substantially",
+    "fig3D": "Kruskal-Wallis, p = 0.00791   (n = 471)\ntwo-tailed, \u03b1 = 0.05, Bonferroni-corrected Mann-Whitney U\nlargest effect 27E1 vs 4AC2: Cliff's \u03b4 = -0.30 (small), p = 0.0277\n1 of 10 pairwise comparisons significant after correction; max |\u03b4| = 0.30, distributions overlap substantially"
+  },
+  "figure3_group_note": "Groups are the isolate codes parsed from the acquisition filename (trailing three digits are the frame number). The operator states that ATCC-6633 and each isolate code are different species; that assignment is operator-supplied and is NOT derivable from the filenames, which carry strain and catalogue identifiers only. The five most populous groups are shown."
+}

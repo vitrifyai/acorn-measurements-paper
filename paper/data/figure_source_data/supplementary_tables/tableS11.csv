@@ -1,0 +1,64 @@
+Format,Operation,Tests,Input px (nm),Worst rel. calibration error (%),Worst rel. diameter error (%),Result
+MRC,initial import,11,0.05-2,0,0.144,pass
+MRC,session save + reload (header calibration),11,0.05-2,0,0.144,pass
+MRC,session save + reload (manual override),11,0.05-2,0,--,pass
+MRC,2x binning,11,0.05-2,0,0.725,pass
+MRC,4x binning,11,0.05-2,0,0.9,pass
+MRC,4x binning + reload of an overridden pixel size,11,0.05-2,0,--,pass
+MRC,tiling,11,0.05-2,0,--,pass
+MRC,tile coordinates restored to the source frame,11,0.05-2,0,2.89,1 of 11 outside tolerance
+MRC,annotation export (COCO polygon + pixel size),11,0.05-2,0,--,pass
+MRC,measurement-table export (image in cache),11,0.05-2,0,0.144,pass
+MRC,measurement-table export (image evicted from the 3-image cache),11,0.05-2,0,0.144,pass
+TIFF (ImageJ),initial import,11,0.05-2,0,0.144,pass
+TIFF (ImageJ),session save + reload (header calibration),11,0.05-2,0,0.144,pass
+TIFF (ImageJ),session save + reload (manual override),11,0.05-2,0,--,pass
+TIFF (ImageJ),2x binning,11,0.05-2,0,0.725,pass
+TIFF (ImageJ),4x binning,11,0.05-2,0,0.9,pass
+TIFF (ImageJ),4x binning + reload of an overridden pixel size,11,0.05-2,0,--,pass
+TIFF (ImageJ),tiling,11,0.05-2,0,--,pass
+TIFF (ImageJ),tile coordinates restored to the source frame,11,0.05-2,0,2.89,1 of 11 outside tolerance
+TIFF (ImageJ),annotation export (COCO polygon + pixel size),11,0.05-2,0,--,pass
+TIFF (ImageJ),measurement-table export (image in cache),11,0.05-2,0,0.144,pass
+TIFF (ImageJ),measurement-table export (image evicted from the 3-image cache),11,0.05-2,0,0.144,pass
+TIFF (resolution tag),initial import,11,0.05-2,0,0.144,pass
+TIFF (resolution tag),session save + reload (header calibration),11,0.05-2,0,0.144,pass
+TIFF (resolution tag),session save + reload (manual override),11,0.05-2,0,--,pass
+TIFF (resolution tag),2x binning,11,0.05-2,0,0.725,pass
+TIFF (resolution tag),4x binning,11,0.05-2,0,0.9,pass
+TIFF (resolution tag),4x binning + reload of an overridden pixel size,11,0.05-2,0,--,pass
+TIFF (resolution tag),tiling,11,0.05-2,0,--,pass
+TIFF (resolution tag),tile coordinates restored to the source frame,11,0.05-2,0,2.89,1 of 11 outside tolerance
+TIFF (resolution tag),annotation export (COCO polygon + pixel size),11,0.05-2,0,--,pass
+TIFF (resolution tag),measurement-table export (image in cache),11,0.05-2,0,0.144,pass
+TIFF (resolution tag),measurement-table export (image evicted from the 3-image cache),11,0.05-2,0,0.144,pass
+OME-TIFF,initial import,11,0.05-2,0,0.144,pass
+OME-TIFF,session save + reload (header calibration),11,0.05-2,0,0.144,pass
+OME-TIFF,session save + reload (manual override),11,0.05-2,0,--,pass
+OME-TIFF,2x binning,11,0.05-2,0,0.725,pass
+OME-TIFF,4x binning,11,0.05-2,0,0.9,pass
+OME-TIFF,4x binning + reload of an overridden pixel size,11,0.05-2,0,--,pass
+OME-TIFF,tiling,11,0.05-2,0,--,pass
+OME-TIFF,tile coordinates restored to the source frame,11,0.05-2,0,2.89,1 of 11 outside tolerance
+OME-TIFF,annotation export (COCO polygon + pixel size),11,0.05-2,0,--,pass
+OME-TIFF,measurement-table export (image in cache),11,0.05-2,0,0.144,pass
+OME-TIFF,measurement-table export (image evicted from the 3-image cache),11,0.05-2,0,0.144,pass
+HDF5,initial import,11,0.05-2,0,0.144,pass
+HDF5,session save + reload (header calibration),11,0.05-2,0,0.144,pass
+HDF5,session save + reload (manual override),11,0.05-2,0,--,pass
+HDF5,2x binning,11,0.05-2,0,0.725,pass
+HDF5,4x binning,11,0.05-2,0,0.9,pass
+HDF5,4x binning + reload of an overridden pixel size,11,0.05-2,0,--,pass
+HDF5,tiling,11,0.05-2,0,--,pass
+HDF5,tile coordinates restored to the source frame,11,0.05-2,0,2.89,1 of 11 outside tolerance
+HDF5,annotation export (COCO polygon + pixel size),11,0.05-2,0,--,pass
+HDF5,measurement-table export (image in cache),11,0.05-2,0,0.144,pass
+HDF5,measurement-table export (image evicted from the 3-image cache),11,0.05-2,0,0.144,pass
+DM4,initial import,1,0.592178,0,--,pass
+DM4,2x binning,1,0.592178,0,--,pass
+DM4,4x binning,1,0.592178,0,--,pass
+DM4,session save + reload (header calibration),1,0.592178,0,--,pass
+TIFF (Zeiss CZ_SEM),initial import,1,19.29,0,--,pass
+TIFF (Zeiss CZ_SEM),2x binning,1,19.29,0,--,pass
+TIFF (Zeiss CZ_SEM),4x binning,1,19.29,0,--,pass
+TIFF (Zeiss CZ_SEM),session save + reload (header calibration),1,19.29,0,--,pass

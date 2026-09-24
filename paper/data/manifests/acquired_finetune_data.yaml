@@ -1,0 +1,6 @@
+path: work/real_ft
+train: images/train
+val: images/val
+test: images/test
+nc: 2
+names: ['spore', 'debris']

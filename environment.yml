@@ -1,0 +1,10 @@
+# Conda-style environment for readers who prefer it. The authoritative lock is
+# uv.lock (uv) with pyproject.toml; requirements-frozen.txt is the exact resolved
+# set this paper's results were produced with.
+name: acorn-paper
+channels: [conda-forge]
+dependencies:
+  - python=3.12.13
+  - pip
+  - pip:
+      - -r requirements-frozen.txt

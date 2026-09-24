@@ -1,0 +1,43 @@
+{
+ "panels": "A-C prepared field; D pooled histograms; E F1 by preparation; F per-field spread; G-H dark fraction vs score; I confident share vs score",
+ "correlations": {
+  "sem": {
+   "dark_rho": -0.881,
+   "dark_p": "0.00385",
+   "conf_rho": 0.643,
+   "conf_p": "0.0856",
+   "between_field_sd": 0.1389,
+   "n_fields": 8
+  },
+  "sem_raw": {
+   "dark_rho": 0.147,
+   "dark_p": "0.728",
+   "conf_rho": 0.738,
+   "conf_p": "0.0366",
+   "between_field_sd": 0.1149,
+   "n_fields": 8
+  },
+  "sem_global": {
+   "dark_rho": 0.098,
+   "dark_p": "0.817",
+   "conf_rho": 0.643,
+   "conf_p": "0.0856",
+   "between_field_sd": 0.1282,
+   "n_fields": 8
+  },
+  "sem_stratified": {
+   "dark_rho": "NOT APPLICABLE",
+   "dark_p": "NOT APPLICABLE",
+   "conf_rho": "NOT AVAILABLE",
+   "conf_p": "NOT AVAILABLE",
+   "between_field_sd": 0.2402,
+   "n_fields": 9
+  }
+ },
+ "pooled_global_window_dn": [
+  0.0,
+  242.0
+ ],
+ "n_images": 26,
+ "exploratory_note": "All correlations are Spearman over 8 held-out fields and are EXPLORATORY, not causal. The dark-fraction relationship is strong and significant ONLY in the published per-image preparation (rho=-0.881, p=0.004) and disappears in the raw (rho=+0.147, p=0.73) and global (rho=+0.098, p=0.82) preparations. Between-field SD is 0.14, 0.11 and 0.13 respectively, so changing the intensity preparation removed the dark-fraction artefact WITHOUT reducing the dominant between-field variation."
+}

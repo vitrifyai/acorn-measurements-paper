@@ -1,0 +1,56 @@
+Software,Version,Documentation accessed,Local or hosted,Native EM metadata,Calibration tracking,Manual annotation,Prompted segmentation,In-application training,Batch inference,Calibrated measurement,Statistical analysis,Simulation,Training-to-result provenance,GUI / CLI / library
+Fiji / ImageJ,Fiji stable distribution; ImageJ 1.54t (16 May 2026),2026-09-08,local,partial,partial,yes,partial,partial,partial,yes,partial,no,no,GUI / CLI / library
+CVAT,2.74.0 (August 2026),2026-09-08,local or hosted,no,no,yes,yes,no,partial,no,no,no,partial,GUI / CLI / library
+Label Studio,1.23 (2026),2026-09-08,local or hosted,no,no,yes,partial,partial,partial,no,no,no,partial,GUI / CLI / library
+Cellpose,4.2.1,2026-09-08,local,no,partial,yes,no,yes,yes,no,no,no,no,GUI / CLI / library
+napari,0.9.0 (25 August 2026),2026-09-08,local,partial,partial,yes,partial,partial,partial,partial,partial,no,no,GUI / -- / library
+RELION,"5.0.1 (local build, commit f2c1a3)",2026-09-08,local,yes,yes,partial,no,partial,yes,partial,partial,partial,partial,GUI / CLI / partial
+cryoSPARC,5.0.7 (14 August 2026),2026-09-08,local (browser client),yes,yes,partial,no,partial,yes,partial,partial,partial,partial,GUI / CLI / library
+ACORN (this work),0.3.0 (commit be8aa3e plus the fixes reported here),2026-09-08,local,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,GUI / CLI / library
+
+Documentation URLs
+Fiji / ImageJ,https://imagej.net/
+CVAT,https://docs.cvat.ai/
+Label Studio,https://labelstud.io/guide/
+Cellpose,https://cellpose.readthedocs.io/
+napari,https://napari.org/stable/
+RELION,https://relion.readthedocs.io/
+cryoSPARC,https://guide.cryosparc.com/
+ACORN (this work),https://github.com/vitrifyai/acorn_software
+
+Footnotes
+(1),"reads TIFF, DM3/DM4 and MRC through Bio-Formats; the vendor SEM tags that carry the true scale (Zeiss CZ_SEM, Thermo/FEI FEI_HELIOS) are not read by the standard readers, which is the failure documented in this manuscript"
+(2),"an image carries a pixel size and a unit, and measurements use them; where the value came from is not recorded, so a header value and a typed-in value are indistinguishable afterwards"
+(3),"through third-party plugins (SAMJ, Labkit), not in the base distribution"
+(4),"pixel classifiers only (Trainable Weka Segmentation, Labkit); no instance-segmentation training"
+(5),macro batch mode and headless execution; no model-serving batch inference in the application
+(6),"a results table, histograms and curve fitting; no hypothesis testing or effect sizes"
+(7),interactive SAM-family segmentors are built in
+(8),automatic annotation through separately deployed serverless model functions
+(9),per-job annotation history and user attribution; no link from an annotation to a model checkpoint or a training run
+(10),requires a machine-learning backend the user deploys
+(11),the ML-backend interface exposes a fit() hook; the training itself is code the user supplies and runs outside the app
+(12),predictions are requested from a deployed ML backend
+(13),annotation history and task versions; no model or calibration lineage
+(14),an object diameter in pixels conditions the model; there is no physical pixel size and no measurement in physical units
+(15),through reader plugins for individual formats; layer scale must usually be set by the caller
+(16),layers carry scale and units and viewers honour them; the origin of the value is not tracked
+(17),"through plugins (napari-sam, micro-sam)"
+(18),through plugins (micro-sam finetuning)
+(19),scripted through the library; no batch-inference UI
+(20),"through plugins (napari-skimage-regionprops), which honour layer scale"
+(21),through plugins
+(22),no command-line entry point for analysis; napari is driven from the GUI or as a Python library
+(23),"manual particle picking, not general annotation"
+(24),"training is confined to specific built-in tasks (the wrapped Topaz picker, the class ranker); a user cannot train a model for their own object class"
+(25),"resolution, per-particle and map statistics; no 2-D object morphometry in physical units"
+(26),job-level statistics such as FSC and per-class distributions; no general hypothesis testing on measurements
+(27),"relion_project produces projections of a reference map; there is no dose, detector or specimen forward model"
+(28),"the pipeline STAR files record every job with its inputs and outputs, which is a strong process record; individual annotations are not linked to a model checkpoint hash"
+(29),a Python module exists for reading and writing STAR files and some job control; the reconstruction code itself is a C++ executable driven by command line or GUI
+(30),manual picking and curation within the processing workflow
+(31),"training within built-in jobs (Topaz wrappers, deep picker); not for a user-defined object class"
+(32),map and particle statistics; no calibrated 2-D morphometry
+(33),job-level statistics; no general hypothesis testing
+(34),"synthetic data generation from a reference volume, without a detector or dose model"
+(35),"a complete job graph with inputs, outputs and parameters; annotations are not linked to checkpoint hashes"

@@ -1,0 +1,5 @@
+DATA LICENSE NOT YET ASSIGNED
+
+Do not publish the microscopy images, annotations, numerical data, or model
+weights in this staging folder until the responsible institution has approved
+the data release and an explicit data license has been selected.

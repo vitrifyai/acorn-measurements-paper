@@ -1,0 +1,4 @@
+Dataset,Images,Train,Val,Test,Labelled instances,Held-out fraction
+"Transmission, PLGA",400,280,60,60,"18,354",0.15
+"Scanning, spores",400,280,60,60,"7,629",0.15
+Total,800,560,120,120,"25,983",0.15

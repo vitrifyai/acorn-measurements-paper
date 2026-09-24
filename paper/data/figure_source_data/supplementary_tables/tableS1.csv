@@ -1,0 +1,11 @@
+Parameter,Value
+Forward model,multislice through vitreous ice
+Transfer function,"weak-phase CTF, CTFFIND/RELION convention"
+chi(k),pi*lam*df*k^2 - 0.5*pi*Cs*lam^3*k^4
+Envelopes,"temporal, spatial, B-factor, dose damage"
+Microscopes,"krios, krios-cfeg, glacios, talos-arctica, talos-l120c, cs-corrected"
+Detectors,"K3, K2, Falcon4, Falcon4i, Falcon3EC, Apollo, DE64, Ceta, ideal"
+Detector response,"parameterised DQE(q) and MTF(q); realistic shapes, not vendor curves"
+Slice thickness,40 A
+Inelastic loss,thickness-dependent
+Validation,"defocus recovered from the simulated power spectrum, R2 0.986, MAE 0.163 um"

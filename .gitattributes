@@ -1,0 +1,5 @@
+# Large binaries belong in a tagged Release or LFS, not in the tree.
+*.pt  filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.mrc filter=lfs diff=lfs merge=lfs -text
+*.dm4 filter=lfs diff=lfs merge=lfs -text

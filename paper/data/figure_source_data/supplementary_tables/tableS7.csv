@@ -1,0 +1,6 @@
+Dataset,Evaluated on,Acquired images,Recall,Precision
+Transmission,simulated test,0,0.932,0.944
+Transmission,"acquired PLGA, 295 verified",0,0.329,0.97
+Scanning,simulated test,0,0.988,0.972
+Scanning,"acquired, 1085 annotated",0,0.253,0.432
+Scanning,"acquired, 1085 annotated",4,0.512,0.726

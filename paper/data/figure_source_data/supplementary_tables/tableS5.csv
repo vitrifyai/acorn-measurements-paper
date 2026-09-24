@@ -1,0 +1,12 @@
+Setting,Value
+Architecture,YOLO11s-seg
+Initialisation,"ImageNet-pretrained, or simulation-pretrained where stated"
+Epochs requested,100
+Early stopping patience,25
+Batch size,16 (4 when fine-tuning on acquired images)
+Image size,640
+Augmentation,ultralytics defaults
+Split,280 / 60 / 60 by disjoint seed range
+Seed,"0, deterministic"
+Hardware,one Tesla V100-SXM3-32GB
+Inference,~7 ms per 640x640 image

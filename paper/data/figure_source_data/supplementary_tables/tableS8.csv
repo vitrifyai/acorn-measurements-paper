@@ -1,0 +1,4 @@
+Reference subset,n,Recall,Precision,Mask mAP@50
+as annotated (all),648,0.512,0.726,0.521
+plausible single objects,566,0.572,0.714,0.572
+confident spores only,452,0.693,0.699,0.666

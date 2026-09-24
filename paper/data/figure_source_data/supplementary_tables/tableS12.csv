@@ -1,0 +1,11 @@
+Record category,Count,Percentage,Linked record
+Manual annotations,0,0.0,Source image
+"Prompt-generated, accepted",48,3.5,Prompt and model
+"Prompt-generated, corrected",3,0.2,Parent annotation
+"Prompt-generated, rejected",262,--,Review log
+"Trained-model, accepted",178,12.9,Checkpoint
+"Trained-model, corrected",61,4.4,Checkpoint and parent
+"Trained-model, rejected",1818,--,Review log
+Imported,1085,78.9,Import record
+Final measurements,1375,--,Annotation and calibration
+Statistical outputs,1,--,Measurement set

@@ -1,0 +1,289 @@
+{
+  "generated_utc": "2026-09-09T00:32:15+00:00",
+  "modality": "sem",
+  "matching": {
+    "criterion": "mask IoU, greedy one-to-one",
+    "iou_threshold": 0.5,
+    "tile_merge_iou": 0.6,
+    "tile_merge_containment": 0.7,
+    "tile_merge_note": "a prediction is discarded as a duplicate when its mask IoU with an already kept prediction exceeds the IoU threshold OR its intersection over its own area exceeds the containment threshold; the second is what removes a fragment cut off by a tile boundary",
+    "confidence": 0.5,
+    "inference": "512 px tiles, 0.25 overlap, predictions mapped to the source frame"
+  },
+  "n_test_micrographs": 8,
+  "n_test_reference_objects": 332,
+  "test_micrographs": [
+    "27E1_002",
+    "27E1_004",
+    "27E1_013",
+    "28A4_004",
+    "4AC2_003",
+    "4AJ1_058",
+    "RO-NN-1_007",
+    "TU-B-10_011"
+  ],
+  "per_seed": [
+    {
+      "seed": 0,
+      "checkpoint": "external/doi/analysis/additional_information/results/sem/seed0/run_20260908_194458/weights/best.pt",
+      "tile_level_maps": {
+        "box_map50": 0.6530445563813079,
+        "box_map50_95": 0.4227567093351512,
+        "box_precision": 0.715434677743774,
+        "box_recall": 0.6326530612244898,
+        "mask_map50": 0.5969636576777464,
+        "mask_map50_95": 0.3700724887993854,
+        "mask_precision": 0.7474170897062213,
+        "mask_recall": 0.5963489436479518
+      },
+      "checkpoint_sha256": "ac4f46852de0c2c41fe670e01212fdc5cc0dd17adab5b3f7d3accb5212f2eb45",
+      "training_seconds": 257.0120406150818,
+      "pooled": {
+        "tp": 186,
+        "fp": 62,
+        "fn": 146,
+        "precision": 0.75,
+        "recall": 0.5602409638554217,
+        "f1": 0.6413793103448276
+      },
+      "tile_level_test_metrics": {
+        "n_images": 48,
+        "mean_precision": 0.7474170897062213,
+        "mean_recall": 0.5963489436479518,
+        "mean_f1": 0.6633913655313444,
+        "mean_iou": 0.5969636576777464,
+        "per_class": {
+          "Spore": {
+            "precision": 0.7474170897062213,
+            "recall": 0.5963489436479518,
+            "f1": 0.6633913655313444,
+            "iou": 0.5969636576777464
+          }
+        }
+      },
+      "tile_level_val_metrics": {
+        "mean_precision": 0.7757737787267898,
+        "mean_recall": 0.7243107769423559,
+        "mean_f1": 0.7491595140788048,
+        "mean_iou": 0.7353328047401388,
+        "per_class": {
+          "Spore": {
+            "precision": 0.7757737787267898,
+            "recall": 0.7243107769423559,
+            "f1": 0.7491595140788048,
+            "iou": 0.7353328047401388
+          }
+        }
+      },
+      "inference_seconds_per_tile_mean": 0.06159082799422322,
+      "inference_seconds_per_micrograph_mean": 1.0555062835192075,
+      "pooled_confident_reference": {
+        "tp": 179,
+        "fp": 69,
+        "fn": 54,
+        "precision": 0.7217741935483871,
+        "recall": 0.7682403433476395,
+        "f1": 0.7442827442827442
+      }
+    },
+    {
+      "seed": 1,
+      "checkpoint": "external/doi/analysis/additional_information/results/sem/seed1/run_20260908_194914/weights/best.pt",
+      "tile_level_maps": {
+        "box_map50": 0.6068138076651058,
+        "box_map50_95": 0.38688977158834004,
+        "box_precision": 0.7804335619151297,
+        "box_recall": 0.5471938775510204,
+        "mask_map50": 0.5594400249707535,
+        "mask_map50_95": 0.3305396104587326,
+        "mask_precision": 0.7777034342884608,
+        "mask_recall": 0.5395408163265306
+      },
+      "checkpoint_sha256": "58980424e0a0777fd81b7af7f2cd95d1865cdb0b58b4a189cc65522cebb5f288",
+      "training_seconds": 213.64791011810303,
+      "pooled": {
+        "tp": 171,
+        "fp": 57,
+        "fn": 161,
+        "precision": 0.75,
+        "recall": 0.5150602409638554,
+        "f1": 0.6107142857142857
+      },
+      "tile_level_test_metrics": {
+        "n_images": 48,
+        "mean_precision": 0.7777034342884608,
+        "mean_recall": 0.5395408163265306,
+        "mean_f1": 0.6370917855212341,
+        "mean_iou": 0.5594400249707535,
+        "per_class": {
+          "Spore": {
+            "precision": 0.7777034342884608,
+            "recall": 0.5395408163265306,
+            "f1": 0.6370917855212341,
+            "iou": 0.5594400249707535
+          }
+        }
+      },
+      "tile_level_val_metrics": {
+        "mean_precision": 0.8275631442953989,
+        "mean_recall": 0.7268170426065163,
+        "mean_f1": 0.7739251981920517,
+        "mean_iou": 0.7732854197826944,
+        "per_class": {
+          "Spore": {
+            "precision": 0.8275631442953989,
+            "recall": 0.7268170426065163,
+            "f1": 0.7739251981920517,
+            "iou": 0.7732854197826944
+          }
+        }
+      },
+      "inference_seconds_per_tile_mean": 0.012435496297257487,
+      "inference_seconds_per_micrograph_mean": 0.7153580813610461,
+      "pooled_confident_reference": {
+        "tp": 167,
+        "fp": 61,
+        "fn": 66,
+        "precision": 0.7324561403508771,
+        "recall": 0.7167381974248928,
+        "f1": 0.7245119305856832
+      }
+    },
+    {
+      "seed": 2,
+      "checkpoint": "external/doi/analysis/additional_information/results/sem/seed2/run_20260908_195248/weights/best.pt",
+      "tile_level_maps": {
+        "box_map50": 0.6270452442038923,
+        "box_map50_95": 0.4211693370063839,
+        "box_precision": 0.7157847545144069,
+        "box_recall": 0.6096938775510204,
+        "mask_map50": 0.5838645685467746,
+        "mask_map50_95": 0.36500884699829117,
+        "mask_precision": 0.7214595170762671,
+        "mask_recall": 0.6033163265306123
+      },
+      "checkpoint_sha256": "ad46ff80b505f75e064d2d69c4f022060cec0393a20945656deccad89ecb210e",
+      "training_seconds": 210.53309559822083,
+      "pooled": {
+        "tp": 175,
+        "fp": 58,
+        "fn": 157,
+        "precision": 0.7510729613733905,
+        "recall": 0.5271084337349398,
+        "f1": 0.6194690265486726
+      },
+      "tile_level_test_metrics": {
+        "n_images": 48,
+        "mean_precision": 0.7214595170762671,
+        "mean_recall": 0.6033163265306123,
+        "mean_f1": 0.657119931169528,
+        "mean_iou": 0.5838645685467746,
+        "per_class": {
+          "Spore": {
+            "precision": 0.7214595170762671,
+            "recall": 0.6033163265306123,
+            "f1": 0.657119931169528,
+            "iou": 0.5838645685467746
+          }
+        }
+      },
+      "tile_level_val_metrics": {
+        "mean_precision": 0.8401511854346613,
+        "mean_recall": 0.6641604010025063,
+        "mean_f1": 0.741861132031269,
+        "mean_iou": 0.7528474444788378,
+        "per_class": {
+          "Spore": {
+            "precision": 0.8401511854346613,
+            "recall": 0.6641604010025063,
+            "f1": 0.741861132031269,
+            "iou": 0.7528474444788378
+          }
+        }
+      },
+      "inference_seconds_per_tile_mean": 0.011938176765397657,
+      "inference_seconds_per_micrograph_mean": 0.7191527428803965,
+      "pooled_confident_reference": {
+        "tp": 168,
+        "fp": 65,
+        "fn": 65,
+        "precision": 0.721030042918455,
+        "recall": 0.721030042918455,
+        "f1": 0.7210300429184548
+      }
+    }
+  ],
+  "across_seeds": {
+    "precision": {
+      "mean": 0.7503576537911302,
+      "sd": 0.0006194745377570897,
+      "n": 3,
+      "values": [
+        0.75,
+        0.75,
+        0.7510729613733905
+      ]
+    },
+    "recall": {
+      "mean": 0.5341365461847389,
+      "sd": 0.023395944172150688,
+      "n": 3,
+      "values": [
+        0.5602409638554217,
+        0.5150602409638554,
+        0.5271084337349398
+      ]
+    },
+    "f1": {
+      "mean": 0.6238542075359287,
+      "sd": 0.01579583151075563,
+      "n": 3,
+      "values": [
+        0.6413793103448276,
+        0.6107142857142857,
+        0.6194690265486726
+      ]
+    }
+  },
+  "inference_seconds_per_micrograph": {
+    "mean": 0.8300057025868833
+  },
+  "inference_seconds_per_tile": {
+    "mean": 0.02865483368562612
+  },
+  "training_seconds": {
+    "mean": 227.06434877713522
+  },
+  "across_seeds_confident_reference": {
+    "precision": {
+      "mean": 0.725086792272573,
+      "sd": 0.006392879504918732,
+      "n": 3,
+      "values": [
+        0.7217741935483871,
+        0.7324561403508771,
+        0.721030042918455
+      ]
+    },
+    "recall": {
+      "mean": 0.7353361945636624,
+      "sd": 0.02857651552995444,
+      "n": 3,
+      "values": [
+        0.7682403433476395,
+        0.7167381974248928,
+        0.721030042918455
+      ]
+    },
+    "f1": {
+      "mean": 0.7299415725956274,
+      "sd": 0.012541243536879406,
+      "n": 3,
+      "values": [
+        0.7442827442827442,
+        0.7245119305856832,
+        0.7210300429184548
+      ]
+    }
+  }
+}

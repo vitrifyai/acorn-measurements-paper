@@ -1,0 +1,18 @@
+Specimen model,Parameter varied,Range
+PLGA nanoparticles,diameter,"14-210 nm, log-normal about 42 nm"
+,particles per field,15-60
+,ice thickness,40-90 nm
+,defocus,-1.0 to -3.0 um
+,detector,"K3, K2, Falcon4"
+,total dose,"20, 40, 60 e-/A2"
+,pixel size,"15, 18, 22 A"
+,debris,"0 or 6-30 chains, 70-180 nm"
+Bacterial spores,length,"800-3000 nm, log-normal about 1267 nm"
+,aspect ratio,"1.05-3.0, mean 1.65"
+,areal density,0.35-0.95 per um2
+,coating,"0 nm, or 8-16 nm gold"
+,beam energy,"0.8-1.5 kV uncoated, 3-6 kV coated"
+,charging,"0, 0.4, 0.8 or 1.2"
+,substrate,"resin, carbon, biology or silicon"
+,pixel size,"4.0, 6.5, 9.6, 14.0, 19.3 nm"
+,debris,"0-13 clumps, 45-110 nm grains"

@@ -1,0 +1,30 @@
+{
+ "pooled_window_dn": [
+  0.0,
+  242.0
+ ],
+ "n_images": 26,
+ "by_preparation": [
+  {
+   "preparation": "published",
+   "mean_dn": 35.57696533203125,
+   "frac_below_32": 0.6804533568738884,
+   "p1": 0.0,
+   "spread_of_frac_below_32": 0.048048006497345676
+  },
+  {
+   "preparation": "raw",
+   "mean_dn": 96.74562072753906,
+   "frac_below_32": 0.018661180142563363,
+   "p1": 42.5,
+   "spread_of_frac_below_32": 0.05033089430569787
+  },
+  {
+   "preparation": "global",
+   "mean_dn": 101.41716766357422,
+   "frac_below_32": 0.018008274945114495,
+   "p1": 44.19230651855469,
+   "spread_of_frac_below_32": 0.049157357201836394
+  }
+ ]
+}

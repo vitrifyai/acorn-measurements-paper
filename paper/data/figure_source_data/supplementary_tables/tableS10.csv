@@ -1,0 +1,3 @@
+Modality,Source images,Train img / tiles,Val img / tiles,Test img / tiles,Annotated objects,Model,Seeds,Precision,Recall,F1,Box mAP50,Mask mAP50,Mask mAP50-95
+Cryo-TEM,30,19 / 155,3 / 26,8 / 71,881,yolo11s-seg.pt,3,0.893 +- 0.027,0.920 +- 0.009,0.906 +- 0.013,0.963,0.957,0.775
+SEM,26,14 / 84,4 / 24,8 / 48,1085,yolo11s-seg.pt,3,0.750 +- 0.001,0.534 +- 0.023,0.624 +- 0.016,0.629,0.580,0.355

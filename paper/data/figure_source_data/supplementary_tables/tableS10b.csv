@@ -1,0 +1,3 @@
+Modality,Architecture,Epochs,Batch,Input size,Seeds,Optimiser (resolved),Augmentations,Training time,Inference / micrograph,Inference / tile,GPU
+Cryo-TEM,yolo11s-seg.pt,100,16,512,"0, 1, 2","AdamW(lr=0.002, momentum=0.9)","HSV 0.015/0.7/0.4, translate 0.1, scale 0.5, fliplr 0.5, mosaic 1.0 (off for the last 10 epochs), erasing 0.4, randaugment; no rotation, shear, perspective, flipud, mixup or copy-paste",4.8 min,1305 ms,21 ms,Tesla V100-SXM3-32GB
+SEM,yolo11s-seg.pt,100,16,512,"0, 1, 2","AdamW(lr=0.002, momentum=0.9)","HSV 0.015/0.7/0.4, translate 0.1, scale 0.5, fliplr 0.5, mosaic 1.0 (off for the last 10 epochs), erasing 0.4, randaugment; no rotation, shear, perspective, flipud, mixup or copy-paste",3.8 min,830 ms,29 ms,Tesla V100-SXM3-32GB

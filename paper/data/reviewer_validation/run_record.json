@@ -1,0 +1,30 @@
+{
+  "generated_utc": "2026-09-21T20:26:28+00:00",
+  "command": "analysis/reviewer_validation/run_validation.py --out analysis/reviewer_validation --device 0",
+  "cwd": "work",
+  "seeds": {
+    "bootstrap": 20260921
+  },
+  "bootstrap_replicates": 2000,
+  "fixed_prediction_confidence": 0.5,
+  "matching": "greedy one-to-one, descending mask IoU, class matched",
+  "matching_iou_threshold": 0.5,
+  "software": {
+    "python": "3.12.13 (main, Mar 20 2026, 00:33:26) [Clang 22.1.1 ]",
+    "platform": "Linux-5.15.0-1109-nvidia-x86_64-with-glibc2.35",
+    "packages": {
+      "acorn": "0.3.0",
+      "ultralytics": "8.4.41",
+      "torch": "2.6.0+cu126",
+      "numpy": "2.3.5",
+      "opencv-python": "5.0.0.93",
+      "Pillow": "12.3.0"
+    },
+    "gpu": "Tesla V100-SXM3-32GB, 580.173.02"
+  },
+  "checkpoint_hashes": {
+    "TEM": "0ad19cdfe34cc4515bc864c30481fa4a3277abe9c61a543fe3ea092ffe834597",
+    "SEM": "eb367758550ad4df1819bb3df26ca105201e1b69616c8b06fb8d5b9c35ab4c3b"
+  },
+  "input_manifest_sha256": "349eb764f8d3f5998f451035935cf8b241c54487b8e135548724527d46161a9e"
+}

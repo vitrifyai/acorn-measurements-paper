@@ -1,0 +1,759 @@
+{
+  "generated_utc": "2026-09-11T19:00:57+00:00",
+  "git_commit": "be8aa3e78275464bbbcfea29b75e97ad81ad28d6",
+  "panels": {
+    "S1": {
+      "materials": [
+        "carbon",
+        "silicon",
+        "copper",
+        "gold"
+      ],
+      "energy_keV": 5.0,
+      "n_electrons": 40000,
+      "seed": 0,
+      "quantile_comparison": [
+        {
+          "material": "carbon",
+          "q": 0.5,
+          "trajectory_nm": 0.0,
+          "kernel_nm": 0.0027308474621600782,
+          "abs_dev_nm": 0.0027308474621600782,
+          "rel_pct": null
+        },
+        {
+          "material": "carbon",
+          "q": 0.9,
+          "trajectory_nm": 155.70067064896134,
+          "kernel_nm": 155.61140078604453,
+          "abs_dev_nm": 0.08926986291680805,
+          "rel_pct": 0.05733428285487193
+        },
+        {
+          "material": "carbon",
+          "q": 0.95,
+          "trajectory_nm": 205.42528043238062,
+          "kernel_nm": 205.5876129141942,
+          "abs_dev_nm": 0.16233248181359272,
+          "rel_pct": 0.07902264096800264
+        },
+        {
+          "material": "silicon",
+          "q": 0.5,
+          "trajectory_nm": 0.36524002428003144,
+          "kernel_nm": 0.36420029281296507,
+          "abs_dev_nm": 0.0010397314670663738,
+          "rel_pct": 0.2846707364878517
+        },
+        {
+          "material": "silicon",
+          "q": 0.9,
+          "trajectory_nm": 175.84102935680218,
+          "kernel_nm": 175.80089680113522,
+          "abs_dev_nm": 0.040132555666957614,
+          "rel_pct": 0.022823203329596035
+        },
+        {
+          "material": "silicon",
+          "q": 0.95,
+          "trajectory_nm": 211.9693667542523,
+          "kernel_nm": 211.69850607866252,
+          "abs_dev_nm": 0.27086067558977334,
+          "rel_pct": 0.12778293379712596
+        },
+        {
+          "material": "copper",
+          "q": 0.5,
+          "trajectory_nm": 4.482312924266197,
+          "kernel_nm": 4.454926839603015,
+          "abs_dev_nm": 0.027386084663182153,
+          "rel_pct": 0.6109810967217455
+        },
+        {
+          "material": "copper",
+          "q": 0.9,
+          "trajectory_nm": 46.5711378846965,
+          "kernel_nm": 46.5197733623812,
+          "abs_dev_nm": 0.05136452231529631,
+          "rel_pct": 0.11029260749966546
+        },
+        {
+          "material": "copper",
+          "q": 0.95,
+          "trajectory_nm": 56.60826424678143,
+          "kernel_nm": 56.54506616973796,
+          "abs_dev_nm": 0.06319807704347369,
+          "rel_pct": 0.11164107906217409
+        },
+        {
+          "material": "gold",
+          "q": 0.5,
+          "trajectory_nm": 5.141991918380244,
+          "kernel_nm": 5.141543966706271,
+          "abs_dev_nm": 0.000447951673972824,
+          "rel_pct": 0.008711637067565272
+        },
+        {
+          "material": "gold",
+          "q": 0.9,
+          "trajectory_nm": 20.190853331756106,
+          "kernel_nm": 20.180223796706475,
+          "abs_dev_nm": 0.010629535049631045,
+          "rel_pct": 0.052645298715101596
+        },
+        {
+          "material": "gold",
+          "q": 0.95,
+          "trajectory_nm": 25.103982247568066,
+          "kernel_nm": 25.087150725290815,
+          "abs_dev_nm": 0.0168315222772506,
+          "rel_pct": 0.06704722028267504
+        }
+      ],
+      "worst_finite_rel_pct": 0.6109810967217455,
+      "worst_case": {
+        "material": "copper",
+        "q": 0.5,
+        "trajectory_nm": 4.482312924266197,
+        "kernel_nm": 4.454926839603015,
+        "abs_dev_nm": 0.027386084663182153,
+        "rel_pct": 0.6109810967217455
+      },
+      "excluded": "carbon SE q50: the trajectory median radius is ~0, so a relative deviation is undefined; the absolute difference is 0.003 nm",
+      "claim_check": "supports 'better than 1%' on trajectory quantiles; the suite's own tolerance for this is 10%, which is looser than the measured behaviour"
+    },
+    "S2": {
+      "scanning_n": {
+        "coated": 24,
+        "uncoated": 14,
+        "uncoated\n+ charging": 22
+      },
+      "transmission_n": {
+        "20": 20,
+        "40": 26,
+        "60": 14
+      },
+      "y": "signed counting error, (predicted - true)/true"
+    },
+    "S4": {
+      "transmission": {
+        "model": "external/doi/models/nanoparticles_tem/best.pt",
+        "checkpoint_sha256": "0ad19cdfe34cc4515bc864c30481fa4a3277abe9c61a543fe3ea092ffe834597",
+        "conf": 0.5,
+        "dataset_median_f1": 0.9848450057405281,
+        "selection_rule": "two fields nearest the dataset median per-field F1",
+        "fields": [
+          {
+            "field": "nano_test_00009",
+            "f1": 0.9846153846153847,
+            "precision": 1.0,
+            "recall": 0.9696969696969697,
+            "n_reference": 33,
+            "tp": 32,
+            "fp": 0,
+            "missed": 1
+          },
+          {
+            "field": "nano_test_00011",
+            "f1": 0.9850746268656716,
+            "precision": 1.0,
+            "recall": 0.9705882352941176,
+            "n_reference": 34,
+            "tp": 33,
+            "fp": 0,
+            "missed": 1
+          }
+        ]
+      },
+      "scanning": {
+        "model": "external/doi/models/spores_sem/best.pt",
+        "checkpoint_sha256": "eb367758550ad4df1819bb3df26ca105201e1b69616c8b06fb8d5b9c35ab4c3b",
+        "conf": 0.5,
+        "dataset_median_f1": 0.9585164835164836,
+        "selection_rule": "two fields nearest the dataset median per-field F1",
+        "fields": [
+          {
+            "field": "spore_test_00004",
+            "f1": 0.967032967032967,
+            "precision": 0.9565217391304348,
+            "recall": 0.9777777777777777,
+            "n_reference": 90,
+            "tp": 88,
+            "fp": 4,
+            "missed": 2
+          },
+          {
+            "field": "spore_test_00029",
+            "f1": 0.9500000000000001,
+            "precision": 0.95,
+            "recall": 0.95,
+            "n_reference": 20,
+            "tp": 19,
+            "fp": 1,
+            "missed": 1
+          }
+        ]
+      }
+    },
+    "S5": {
+      "transmission": {
+        "acquired": {
+          "mean": 125.70235443115234,
+          "std": 44.93106053790248,
+          "p1": 15.0,
+          "p99": 239.0,
+          "frac_below_32": 0.0213470458984375
+        },
+        "simulated": {
+          "mean": 219.31738662719727,
+          "std": 39.454392776043186,
+          "p1": 39.0,
+          "p99": 252.0,
+          "frac_below_32": 0.007999420166015625
+        },
+        "display": {
+          "rule": "single 0.5-99.5 percentile window taken from the acquired image and applied to both",
+          "lo": 0.0,
+          "hi": 255.0
+        }
+      },
+      "scanning": {
+        "acquired": {
+          "mean": 34.380927113439306,
+          "std": 55.47983745313386,
+          "p1": 0.0,
+          "p99": 235.0,
+          "frac_below_32": 0.681555951950867
+        },
+        "simulated": {
+          "mean": 64.4168651779263,
+          "std": 46.97486361637399,
+          "p1": 15.0,
+          "p99": 205.0,
+          "frac_below_32": 0.3272669797687861
+        },
+        "display": {
+          "rule": "single 0.5-99.5 percentile window taken from the acquired image and applied to both",
+          "lo": 0.0,
+          "hi": 255.0
+        }
+      }
+    },
+    "S6": {
+      "selection_rule": "field nearest the dataset median recall",
+      "fields": {
+        "transmission_simulation_only": {
+          "field": "FoilHole_14663539_Data_14664769_14664771_20240215_115338",
+          "recall": 0.38333333333333336,
+          "dataset_median_recall": 0.33452380952380956,
+          "n_reference": 60,
+          "tp": 23,
+          "fp": 1,
+          "missed": 37,
+          "note": "no fine-tuning series exists for the transmission data"
+        },
+        "scanning_simulation_only": {
+          "field": "4AC2_008",
+          "model": "external/doi/models/spores_sem/best.pt",
+          "checkpoint_sha256": "eb367758550ad4df1819bb3df26ca105201e1b69616c8b06fb8d5b9c35ab4c3b",
+          "n_reference": 35,
+          "tp": 10,
+          "fp": 5,
+          "missed": 25,
+          "dataset_median_recall": 0.5781671159029649
+        },
+        "scanning_plus_four_acquired": {
+          "field": "4AC2_008",
+          "model": "external/doi/models/curve_sim_4/best.pt",
+          "checkpoint_sha256": "ea5fe9ce2bd36c0954379688c47c67b2b322304b840649dad7daf4ca902c8b05",
+          "n_reference": 35,
+          "tp": 20,
+          "fp": 1,
+          "missed": 15,
+          "dataset_median_recall": 0.5781671159029649
+        }
+      }
+    },
+    "S7": {
+      "composition": {
+        "confident spore": 777,
+        "plausible, ragged": 190,
+        "fragment": 60,
+        "aggregate outline": 58
+      },
+      "thresholds": {
+        "circularity": 0.5,
+        "area_um2": [
+          0.3,
+          3.0
+        ]
+      },
+      "bracket": {
+        "as annotated (all)": {
+          "n": 648,
+          "recall": 0.5116279069767442,
+          "prec": 0.7261699695896262,
+          "map50": 0.5205565018175451
+        },
+        "plausible single objects": {
+          "n": 566,
+          "recall": 0.5721274423479977,
+          "prec": 0.7140371433952477,
+          "map50": 0.5724585930454036
+        },
+        "confident spores only": {
+          "n": 452,
+          "recall": 0.6926503340757239,
+          "prec": 0.6988931601393282,
+          "map50": 0.6658675406954124
+        }
+      },
+      "interpretation": "recall moves 0.512 -> 0.572 -> 0.693 while precision stays 0.726 -> 0.714 -> 0.699; the flat precision is what shows the detector was not producing the excluded objects",
+      "n_all_annotations": 1085,
+      "n_evaluated_fields": 648,
+      "caption": "Composition of the reference set. (A) Every annotation in the reference set, n = 1085, placed by circularity and projected area; dashed line, the circularity threshold at 0.5; dotted lines, the area bounds at 0.3 and 3.0 um^2. The four categories are assigned by those thresholds alone. (B) Recall and precision against nested subsets of the reference. Panel B and Table S8 are computed on the 648 annotations that fall within the fields the detector was evaluated on, a subset of the 1085 shown in panel A; the remaining 437 lie in fields held outside the evaluation. Panel A therefore characterises the reference set as a whole, while panel B reports performance, and the two counts are not expected to agree."
+    }
+  },
+  "tables": {
+    "tableS1": {
+      "header": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Forward model",
+          "multislice through vitreous ice"
+        ],
+        [
+          "Transfer function",
+          "weak-phase CTF, CTFFIND/RELION convention"
+        ],
+        [
+          "chi(k)",
+          "pi*lam*df*k^2 - 0.5*pi*Cs*lam^3*k^4"
+        ],
+        [
+          "Envelopes",
+          "temporal, spatial, B-factor, dose damage"
+        ],
+        [
+          "Microscopes",
+          "krios, krios-cfeg, glacios, talos-arctica, talos-l120c, cs-corrected"
+        ],
+        [
+          "Detectors",
+          "K3, K2, Falcon4, Falcon4i, Falcon3EC, Apollo, DE64, Ceta, ideal"
+        ],
+        [
+          "Detector response",
+          "parameterised DQE(q) and MTF(q); realistic shapes, not vendor curves"
+        ],
+        [
+          "Slice thickness",
+          "40 A"
+        ],
+        [
+          "Inelastic loss",
+          "thickness-dependent"
+        ],
+        [
+          "Validation",
+          "defocus recovered from the simulated power spectrum, R2 0.986, MAE 0.163 um"
+        ]
+      ],
+      "caption": "Transmission engine parameters."
+    },
+    "tableS2": {
+      "header": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Forward model",
+          "Monte Carlo electron transport"
+        ],
+        [
+          "Elastic scattering",
+          "screened Rutherford"
+        ],
+        [
+          "Stopping power",
+          "Joy-Luo modified Bethe"
+        ],
+        [
+          "Range",
+          "Kanaya-Okayama (1972)"
+        ],
+        [
+          "Materials",
+          "17, including 6 compounds by weight-averaged Z and A"
+        ],
+        [
+          "Free parameter",
+          "epsilon, energy per escaping secondary; fitted per material"
+        ],
+        [
+          "Fitted epsilon range",
+          "57-243 eV"
+        ],
+        [
+          "Emission",
+          "SE1/SE2 split with per-material interaction-volume kernels"
+        ],
+        [
+          "Kernel construction",
+          "enclosed-weight CDF from traced trajectories"
+        ],
+        [
+          "Kernel fidelity",
+          "better than 1% on trajectory quantiles (Fig. S1B)"
+        ],
+        [
+          "Detectors",
+          "ETD, TLD, BSE"
+        ],
+        [
+          "Optional artefacts",
+          "specimen charging (off by default)"
+        ],
+        [
+          "Validation",
+          "backscatter yield within 15% of published, 20% for gold (Fig. 4B)"
+        ]
+      ],
+      "caption": "Scanning engine parameters."
+    },
+    "tableS3": {
+      "header": [
+        "Specimen model",
+        "Parameter varied",
+        "Range"
+      ],
+      "rows": [
+        [
+          "PLGA nanoparticles",
+          "diameter",
+          "14-210 nm, log-normal about 42 nm"
+        ],
+        [
+          "",
+          "particles per field",
+          "15-60"
+        ],
+        [
+          "",
+          "ice thickness",
+          "40-90 nm"
+        ],
+        [
+          "",
+          "defocus",
+          "-1.0 to -3.0 um"
+        ],
+        [
+          "",
+          "detector",
+          "K3, K2, Falcon4"
+        ],
+        [
+          "",
+          "total dose",
+          "20, 40, 60 e-/A2"
+        ],
+        [
+          "",
+          "pixel size",
+          "15, 18, 22 A"
+        ],
+        [
+          "",
+          "debris",
+          "0 or 6-30 chains, 70-180 nm"
+        ],
+        [
+          "Bacterial spores",
+          "length",
+          "800-3000 nm, log-normal about 1267 nm"
+        ],
+        [
+          "",
+          "aspect ratio",
+          "1.05-3.0, mean 1.65"
+        ],
+        [
+          "",
+          "areal density",
+          "0.35-0.95 per um2"
+        ],
+        [
+          "",
+          "coating",
+          "0 nm, or 8-16 nm gold"
+        ],
+        [
+          "",
+          "beam energy",
+          "0.8-1.5 kV uncoated, 3-6 kV coated"
+        ],
+        [
+          "",
+          "charging",
+          "0, 0.4, 0.8 or 1.2"
+        ],
+        [
+          "",
+          "substrate",
+          "resin, carbon, biology or silicon"
+        ],
+        [
+          "",
+          "pixel size",
+          "4.0, 6.5, 9.6, 14.0, 19.3 nm"
+        ],
+        [
+          "",
+          "debris",
+          "0-13 clumps, 45-110 nm grains"
+        ]
+      ],
+      "caption": "Specimen models and the parameters actually varied."
+    },
+    "tableS4": {
+      "header": [
+        "Dataset",
+        "Images",
+        "Train",
+        "Val",
+        "Test",
+        "Labelled instances",
+        "Held-out fraction"
+      ],
+      "rows": [
+        [
+          "Transmission, PLGA",
+          400,
+          280,
+          60,
+          60,
+          "18,354",
+          "0.15"
+        ],
+        [
+          "Scanning, spores",
+          400,
+          280,
+          60,
+          60,
+          "7,629",
+          "0.15"
+        ],
+        [
+          "Total",
+          800,
+          560,
+          120,
+          120,
+          "25,983",
+          "0.15"
+        ]
+      ],
+      "caption": "Simulated datasets as generated. Splits are by disjoint random seed, so no test scene appears in training in any form."
+    },
+    "tableS5": {
+      "header": [
+        "Setting",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Architecture",
+          "YOLO11s-seg"
+        ],
+        [
+          "Initialisation",
+          "ImageNet-pretrained, or simulation-pretrained where stated"
+        ],
+        [
+          "Epochs requested",
+          "100"
+        ],
+        [
+          "Early stopping patience",
+          "25"
+        ],
+        [
+          "Batch size",
+          "16 (4 when fine-tuning on acquired images)"
+        ],
+        [
+          "Image size",
+          "640"
+        ],
+        [
+          "Augmentation",
+          "ultralytics defaults"
+        ],
+        [
+          "Split",
+          "280 / 60 / 60 by disjoint seed range"
+        ],
+        [
+          "Seed",
+          "0, deterministic"
+        ],
+        [
+          "Hardware",
+          "one Tesla V100-SXM3-32GB"
+        ],
+        [
+          "Inference",
+          "~7 ms per 640x640 image"
+        ]
+      ],
+      "caption": "Training configuration."
+    },
+    "tableS6": {
+      "header": [
+        "Dataset",
+        "Epochs",
+        "Box mAP@50",
+        "Box mAP@50-95",
+        "Mask mAP@50",
+        "Mask mAP@50-95",
+        "Mask P",
+        "Mask R"
+      ],
+      "rows": [
+        [
+          "Transmission, PLGA",
+          100,
+          0.984,
+          0.889,
+          0.935,
+          0.577,
+          0.944,
+          0.932
+        ],
+        [
+          "Scanning, spores",
+          95,
+          0.974,
+          0.937,
+          0.99,
+          0.872,
+          0.972,
+          0.988
+        ]
+      ],
+      "caption": "Simulated held-out performance, target class only."
+    },
+    "tableS7": {
+      "header": [
+        "Dataset",
+        "Evaluated on",
+        "Acquired images",
+        "Recall",
+        "Precision"
+      ],
+      "rows": [
+        [
+          "Transmission",
+          "simulated test",
+          0,
+          0.932,
+          0.944
+        ],
+        [
+          "Transmission",
+          "acquired PLGA, 295 verified",
+          0,
+          0.329,
+          0.97
+        ],
+        [
+          "Scanning",
+          "simulated test",
+          0,
+          0.988,
+          0.972
+        ],
+        [
+          "Scanning",
+          "acquired, 1085 annotated",
+          0,
+          0.253,
+          0.432
+        ],
+        [
+          "Scanning",
+          "acquired, 1085 annotated",
+          4,
+          0.512,
+          0.726
+        ]
+      ],
+      "caption": "Transfer to acquired data."
+    },
+    "tableS8": {
+      "header": [
+        "Reference subset",
+        "n",
+        "Recall",
+        "Precision",
+        "Mask mAP@50"
+      ],
+      "rows": [
+        [
+          "as annotated (all)",
+          648,
+          0.512,
+          0.726,
+          0.521
+        ],
+        [
+          "plausible single objects",
+          566,
+          0.572,
+          0.714,
+          0.572
+        ],
+        [
+          "confident spores only",
+          452,
+          0.693,
+          0.699,
+          0.666
+        ]
+      ],
+      "caption": "Detector performance against nested reference subsets. The detector, images and acquisition are identical throughout; only the reference differs. n counts annotations within the evaluated fields; the full reference set contains 1085 annotations, of which 648 fall in those fields (Figure S7)."
+    }
+  },
+  "not_built": {
+    "figure_1": "needs six staged captures from a live interface session; cannot be produced headlessly without looking contrived",
+    "S3": "training curves; no claim in the paper depends on them and the main text reports final held-out performance",
+    "text_S1": "removed at the author's request. For the record: no written annotation protocol was found on either share, and the reference set's single-class vocabulary -- every annotation labelled 'Spore', with no class for debris -- is measurable from the annotations themselves and is what places debris contours inside the spore reference.",
+    "table_S8_burden": "the annotation-burden table was removed; it reproduced main-text Figure 4D exactly. The former Table S9 (reference subsets) is now Table S8."
+  },
+  "palette": {
+    "encoding_rule": "Colour encodes imaging modality only. Within a modality, series are separated by line style and marker fill, never by hue.",
+    "modality": {
+      "transmission_cryoTEM": "#2F4858",
+      "scanning_SEM": "#C08A2E"
+    },
+    "outcome": {
+      "reference_ground_truth": "#1B9E77",
+      "true_positive": "#7570B3",
+      "false_positive": "#E7298A",
+      "missed": "#525252"
+    },
+    "structural": {
+      "ink": "#1b1f24",
+      "grey": "#5b6670",
+      "rule": "#c3c9d1",
+      "band": "#eef0f3"
+    },
+    "accessibility": "The two modality hues differ in lightness as well as hue (L* ~31 vs ~62), so panels survive greyscale conversion and the common colour vision deficiencies."
+  }
+}
