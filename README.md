@@ -39,6 +39,14 @@ for DOI archive placement, environment overrides, and known limitations.
 Citation metadata are provided in `CITATION.cff`. The manuscript DOI will be
 added when assigned.
 
-## Software license
+## Licenses
 
-The software source files are distributed under the MIT License; see `LICENSE`.
+- ACORN-owned software is distributed under the MIT License; see `LICENSE`.
+- Microscopy data, annotations, measurements, numerical source data, synthetic
+  datasets, tables, figures, and other publication materials are distributed
+  under CC BY 4.0 unless a source record states otherwise; see `LICENSE-DATA`.
+- Model checkpoints trained using Ultralytics YOLO are distributed under
+  AGPL-3.0 and remain subject to applicable Ultralytics upstream terms; see
+  `LICENSE-MODELS`.
+
+See `THIRD_PARTY_NOTICES.md` for license scope and upstream notices.
