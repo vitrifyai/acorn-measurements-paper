@@ -65,7 +65,9 @@ configuration and provenance files are interpreted from the repository root.
 ## 4. Verify the bundle
 
 ```bash
-sha256sum -c STAGING_SHA256SUMS
+python paper/scripts/smoke_test.py
+# Equivalent checksum-only validation:
+sha256sum -c SHA256SUMS
 ```
 
 ## 5. Regenerate the figures

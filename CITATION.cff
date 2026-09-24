@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite this repository and the associated manuscript."
+title: "ACORN methods paper reproducibility package: Turning Large Electron Microscopy Datasets into Quantitative Measurements with Model-Assisted Analysis"
+type: dataset
+authors:
+  - family-names: Williams
+    given-names: "Alexis N."
+  - family-names: Harris
+    given-names: "Chanda R."
+version: 1.0.0
+date-released: 2026-09-24
+doi: 10.13139/ORNLNCCS/3920044
+repository-code: "https://github.com/vitrifyai/acorn-measurements-paper"
+url: "https://github.com/vitrifyai/acorn-measurements-paper"
+keywords:
+  - electron microscopy
+  - cryogenic transmission electron microscopy
+  - scanning electron microscopy
+  - image segmentation
+  - reproducible research
